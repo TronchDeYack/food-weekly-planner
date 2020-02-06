@@ -20,9 +20,34 @@
   </svg>
 </template>
 
-<style scoped>
-svg {
-  width: 24px;
-  height: 24px;
+<style scoped lang="scss">
+.low {
+  & > g > g:nth-child(1) > path {
+    fill: #00ff0d !important;
+  }
+
+  & > g > g:nth-child(2) > path {
+    fill: #00ff0d !important;
+  }
+}
+
+.medium {
+  & > g > g:nth-child(1) > path {
+    fill: #FDDB33 !important;
+  }
+
+  & > g > g:nth-child(2) > path {
+    fill: #FDDB33 !important;
+  }
+}
+
+.high {
+  & > g > g:nth-child(1) > path {
+    fill: #ff2300 !important;
+  }
+
+  & > g > g:nth-child(2) > path {
+    fill: #ff2300 !important;
+  }
 }
 </style>

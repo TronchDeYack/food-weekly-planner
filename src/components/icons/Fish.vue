@@ -13,13 +13,6 @@
   </svg>
 </template>
 
-<style scoped>
-svg {
-  width: 24px;
-  height: 24px;
-}
-</style>
-
 <script>
 import IconColor from '@/components/mixins/IconColor.vue';
 
