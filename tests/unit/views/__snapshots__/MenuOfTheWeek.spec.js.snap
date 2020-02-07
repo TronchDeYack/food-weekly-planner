@@ -1,14 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MenuOfTheWeek Should render. 1`] = `
-<div class="container">
+<v-container-stub>
   <h2 class="mt-3">Menu of the week</h2>
-  <div class="row">
-    <div class="col-12">
+  <v-row-stub>
+    <v-col-stub>
       <menucard-stub title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
       <menucard-stub title="Soupe de légumes" minutes="30" caloriesindicator="low" isvegetarian="true"></menucard-stub>
       <menucard-stub title="Sushi x48" minutes="5" caloriesindicator="high" hasegg="true" hasmeat="true" hasfish="true"></menucard-stub>
-    </div>
-  </div>
-</div>
+      <menucard-stub title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
+      <menucard-stub title="Soupe de légumes" minutes="30" caloriesindicator="low" isvegetarian="true"></menucard-stub>
+      <menucard-stub title="Sushi x48" minutes="5" caloriesindicator="high" hasegg="true" hasmeat="true" hasfish="true"></menucard-stub>
+    </v-col-stub>
+  </v-row-stub>
+</v-container-stub>
 `;

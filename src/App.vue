@@ -1,17 +1,17 @@
 <template>
-  <div id="app">
-    <Header />
+  <v-app id="app">
     <router-view />
-  </div>
+    <BottomNavbar />
+  </v-app>
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
+import BottomNavbar from '@/components/BottomNavbar.vue';
 
 export default {
   name: 'app',
   components: {
-    Header,
+    BottomNavbar,
   },
 };
 </script>

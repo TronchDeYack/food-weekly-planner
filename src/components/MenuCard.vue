@@ -1,37 +1,34 @@
 <template>
-  <div class="card mt-3 mb-3">
-    <div class="card-body">
-      <div class="card-title d-flex justify-content-between">
-        <h5 class="mb-0">{{ title }}</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox"
-            id="inlineCheckbox1" value="option1" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 mt-2">
+  <v-card class="mt-3 mb-3">
+    <v-card-title>{{title}}</v-card-title>
+    <v-card-text>
+      <v-row align="center">
+        <v-col class="d-flex align-center">
           <Timer />
-          {{ minutes }} min
-        </div>
-        <div class="col-6 mt-2">
-          <Calories :class="caloriesIndicator" />
-        </div>
-      <div class="col-12 mt-4">
-        Contient
-        <Egg class="ml-1 mr-4" :disabled="!hasEgg"/>
-        <Fish class="mr-4" :disabled="!hasFish"/>
-        <Meat class="mr-4" :disabled="!hasMeat"/>
-        <Vegetable :disabled="!isVegetarian"/>
-      </div>
-      </div>
-    </div>
-  </div>
+          {{minutes}} min
+        </v-col>
+        <v-col>
+          <Calories :class="caloriesIndicator"/>
+        </v-col>
+      </v-row>
+    </v-card-text>
+    <v-divider class="mx-4"></v-divider>
+    <v-card-text>
+      Contient
+      <v-chip-group column>
+        <v-chip label><Egg :disabled="!hasEgg"/></v-chip>
+        <v-chip label><Fish :disabled="!hasFish"/></v-chip>
+        <v-chip label><Meat :disabled="!hasMeat"/></v-chip>
+        <v-chip label><Vegetable :disabled="!isVegetarian"/></v-chip>
+      </v-chip-group>
+    </v-card-text>
+  </v-card>
 </template>
 
 <style lang="scss">
 svg {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
 }
 </style>
 

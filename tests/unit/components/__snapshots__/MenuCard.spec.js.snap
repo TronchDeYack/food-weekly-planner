@@ -1,28 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MenuCard Should render. 1`] = `
-<div class="card mt-3 mb-3">
-  <div class="card-body">
-    <div class="card-title d-flex justify-content-between">
-      <h5 class="mb-0">TITLE</h5>
-      <div class="form-check"><input type="checkbox" id="inlineCheckbox1" value="option1" class="form-check-input"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 mt-2">
+<v-card-stub class="mt-3 mb-3">
+  <v-card-title-stub>TITLE</v-card-title-stub>
+  <v-card-text-stub>
+    <v-row-stub align="center">
+      <v-col-stub class="d-flex align-center">
         <timer-stub></timer-stub>
         30 min
-      </div>
-      <div class="col-6 mt-2">
+      </v-col-stub>
+      <v-col-stub>
         <calories-stub class="high"></calories-stub>
-      </div>
-      <div class="col-12 mt-4">
-        Contient
-        <egg-stub class="ml-1 mr-4"></egg-stub>
-        <fish-stub class="mr-4"></fish-stub>
-        <meat-stub disabled="true" class="mr-4"></meat-stub>
+      </v-col-stub>
+    </v-row-stub>
+  </v-card-text-stub>
+  <v-divider-stub class="mx-4"></v-divider-stub>
+  <v-card-text-stub>
+    Contient
+    <v-chip-group-stub column="">
+      <v-chip-stub label="">
+        <egg-stub></egg-stub>
+      </v-chip-stub>
+      <v-chip-stub label="">
+        <fish-stub></fish-stub>
+      </v-chip-stub>
+      <v-chip-stub label="">
+        <meat-stub disabled="true"></meat-stub>
+      </v-chip-stub>
+      <v-chip-stub label="">
         <vegetable-stub disabled="true"></vegetable-stub>
-      </div>
-    </div>
-  </div>
-</div>
+      </v-chip-stub>
+    </v-chip-group-stub>
+  </v-card-text-stub>
+</v-card-stub>
 `;
