@@ -2,10 +2,10 @@
 
 exports[`BottomNavbar Should render. 1`] = `
 <v-bottom-navigation-stub fixed="true">
-  <v-btn-stub value="menu"><span>Menu</span>
+  <v-btn-stub value="menu" to="/"><span>Menu</span>
     <v-icon-stub>mdi-chef-hat</v-icon-stub>
   </v-btn-stub>
-  <v-btn-stub value="recipes"><span>Recipes</span>
+  <v-btn-stub value="recipes" to="/recipes"><span>Recipes</span>
     <v-icon-stub>mdi-noodles</v-icon-stub>
   </v-btn-stub>
   <v-btn-stub value="shopping"><span>Shopping</span>

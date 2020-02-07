@@ -11,6 +11,7 @@ VueTestUtils.config.mocks = {
 VueTestUtils.config.stubs = {
   'router-link': true,
   'v-bottom-navigation': true,
+  'v-app-bar': true,
   'v-btn': true,
   'v-card': true,
   'v-card-text': true,
@@ -22,4 +23,5 @@ VueTestUtils.config.stubs = {
   'v-divider': true,
   'v-icon': true,
   'v-row': true,
+  'v-toolbar-title': true,
 };

@@ -6,6 +6,8 @@ import './registerServiceWorker';
 import router from './router';
 import store from './store';
 
+import '@/assets/style/global.css';
+
 Vue.config.productionTip = false;
 
 new Vue({

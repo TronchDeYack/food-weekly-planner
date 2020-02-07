@@ -1,6 +1,9 @@
 <template>
   <v-container>
-    <h2 class="mt-3">Menu of the week</h2>
+    <div class="d-flex align-center justify-space-between mt-2">
+      <h2>Menu of the week</h2>
+      <v-btn color="primary">Regenerate</v-btn>
+    </div>
     <v-row>
       <v-col>
         <MenuCard title="Spaghetti bolognaise" :minutes=20
@@ -30,7 +33,7 @@
 import MenuCard from '@/components/MenuCard.vue';
 
 export default {
-  name: 'app',
+  name: 'menu-of-the-week',
   components: {
     MenuCard,
   },

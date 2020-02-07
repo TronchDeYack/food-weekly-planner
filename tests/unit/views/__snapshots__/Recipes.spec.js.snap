@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipes Should render. 1`] = `
+<v-container-stub>
+  <h2 class="mt-2">Recipes</h2>
+  <v-row-stub>
+    <v-col-stub>
+      <menucard-stub title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
+    </v-col-stub>
+  </v-row-stub>
+  <v-btn-stub absolute="" dark="" fab="" bottom="" right="" color="secondary" class="btn-over-navbar">
+    <v-icon-stub>mdi-plus</v-icon-stub>
+  </v-btn-stub>
+</v-container-stub>
+`;
