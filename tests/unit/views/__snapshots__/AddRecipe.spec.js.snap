@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddRecipe Should render. 1`] = `
+<v-stepper-stub vertical="" value="1">
+  <v-stepper-step-stub step="1">
+    Title of the recipe
+  </v-stepper-step-stub>
+  <v-stepper-content-stub step="1">
+    <v-text-field-stub label="Title"></v-text-field-stub>
+    <v-btn-stub color="primary">Continue</v-btn-stub>
+    <v-btn-stub text="">Cancel</v-btn-stub>
+  </v-stepper-content-stub>
+  <v-stepper-step-stub step="2">How many minutes to prepare ?</v-stepper-step-stub>
+  <v-stepper-content-stub step="2">
+    <v-slider-stub tick-labels="5,10,15,30,45,60,+ 60" max="6" step="1" ticks="always" tick-size="3"></v-slider-stub>
+    <v-btn-stub color="primary">Continue</v-btn-stub>
+    <v-btn-stub text="">Cancel</v-btn-stub>
+  </v-stepper-content-stub>
+  <v-stepper-step-stub step="3">
+    What is the level of calories ?
+  </v-stepper-step-stub>
+  <v-stepper-content-stub step="3">
+    <v-slider-stub tick-labels="Low,Medium,High" max="2" step="1" ticks="always" tick-size="3"></v-slider-stub>
+    <v-btn-stub color="primary">Continue</v-btn-stub>
+    <v-btn-stub text="">Cancel</v-btn-stub>
+  </v-stepper-content-stub>
+  <v-stepper-step-stub step="4">What are the ingredients ?</v-stepper-step-stub>
+  <v-stepper-content-stub step="4">
+    TODO
+    <v-btn-stub color="primary">Continue</v-btn-stub>
+    <v-btn-stub text="">Cancel</v-btn-stub>
+  </v-stepper-content-stub>
+</v-stepper-stub>
+`;

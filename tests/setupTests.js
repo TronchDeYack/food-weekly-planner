@@ -23,5 +23,10 @@ VueTestUtils.config.stubs = {
   'v-divider': true,
   'v-icon': true,
   'v-row': true,
+  'v-slider': true,
+  'v-stepper': true,
+  'v-stepper-content': true,
+  'v-stepper-step': true,
+  'v-text-field': true,
   'v-toolbar-title': true,
 };

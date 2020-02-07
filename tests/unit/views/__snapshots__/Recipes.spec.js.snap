@@ -8,7 +8,7 @@ exports[`Recipes Should render. 1`] = `
       <menucard-stub title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
     </v-col-stub>
   </v-row-stub>
-  <v-btn-stub absolute="" dark="" fab="" bottom="" right="" color="secondary" class="btn-over-navbar">
+  <v-btn-stub absolute="" dark="" fab="" bottom="" right="" color="secondary" to="/add-recipe" class="btn-over-navbar">
     <v-icon-stub>mdi-plus</v-icon-stub>
   </v-btn-stub>
 </v-container-stub>

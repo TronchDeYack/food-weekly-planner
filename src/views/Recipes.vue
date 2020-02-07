@@ -16,6 +16,7 @@
       right
       color="secondary"
       class="btn-over-navbar"
+      to="/add-recipe"
     >
       <v-icon>mdi-plus</v-icon>
     </v-btn>
