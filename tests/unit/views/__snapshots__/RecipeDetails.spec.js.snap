@@ -3,7 +3,7 @@
 exports[`RecipeDetails Should render. 1`] = `
 <v-container-stub tag="div">
   <v-row-stub tag="div">
-    <v-col-stub tag="div" col="12">
+    <v-col-stub cols="12" tag="div">
       <h3>Spaghetti Bolognaise</h3>
     </v-col-stub>
   </v-row-stub>

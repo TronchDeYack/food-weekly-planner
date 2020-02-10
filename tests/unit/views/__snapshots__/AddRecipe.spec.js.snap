@@ -98,9 +98,22 @@ exports[`AddRecipe Should render. 1`] = `
       </div>
     </v-stepper-content-stub>
     <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="9">
-      What are the others ingredients ?
+      What are the condiments / spices ?
     </v-stepper-step-stub>
     <v-stepper-content-stub step="9">
+      <v-chip-group-stub activeclass="primary" multiple="true" nexticon="$next" mobilebreakpoint="1264" previcon="$prev">
+        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Ketchup</v-chip-stub>
+        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Sel de guérande</v-chip-stub>
+      </v-chip-group-stub>
+      <div class="mt-2">
+        <v-btn-stub color="primary" tag="button" activeclass="" type="button">Continue</v-btn-stub>
+        <v-btn-stub tag="button" activeclass="" text="true" type="button">Cancel</v-btn-stub>
+      </div>
+    </v-stepper-content-stub>
+    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="10">
+      What are the others ingredients ?
+    </v-stepper-step-stub>
+    <v-stepper-content-stub step="10">
       <v-chip-group-stub activeclass="primary" multiple="true" nexticon="$next" mobilebreakpoint="1264" previcon="$prev">
         <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filter="true" filtericon="$complete" label="true">Vin blanc</v-chip-stub>
         <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filter="true" filtericon="$complete" label="true">Levure</v-chip-stub>

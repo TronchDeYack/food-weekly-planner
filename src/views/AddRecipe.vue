@@ -122,15 +122,29 @@
       </v-stepper-content>
 
       <v-stepper-step :complete="e6 > 9" step="9">
-        What are the others ingredients ?
+        What are the condiments / spices ?
       </v-stepper-step>
       <v-stepper-content step="9">
+        <v-chip-group multiple active-class="primary">
+          <v-chip label>Ketchup</v-chip>
+          <v-chip label>Sel de guérande</v-chip>
+        </v-chip-group>
+        <div class="mt-2">
+          <v-btn color="primary" @click="e6 = 10">Continue</v-btn>
+          <v-btn text>Cancel</v-btn>
+        </div>
+      </v-stepper-content>
+
+      <v-stepper-step :complete="e6 > 10" step="10">
+        What are the others ingredients ?
+      </v-stepper-step>
+      <v-stepper-content step="10">
         <v-chip-group multiple active-class="primary">
           <v-chip label filter>Vin blanc</v-chip>
           <v-chip label filter>Levure</v-chip>
         </v-chip-group>
         <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 10">Continue</v-btn>
+          <v-btn color="primary" @click="e6 = 11">Continue</v-btn>
           <v-btn text>Cancel</v-btn>
         </div>
       </v-stepper-content>

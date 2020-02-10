@@ -1,0 +1,471 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shopping Should render. 1`] = `
+<v-expansion-panels-stub activeclass="v-item--active">
+  <v-expansion-panel-stub>
+    <v-expansion-panel-header-stub expandicon="$expand">
+      Vegetables (0/3)
+    </v-expansion-panel-header-stub>
+    <v-expansion-panel-content-stub>
+      <v-list-stub tag="div" tile="true">
+        <v-list-item-group-stub activeclass="v-item--active" multiple="true">
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Poivrons x2</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Oignons x2</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Carottes x2</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+        </v-list-item-group-stub>
+      </v-list-stub>
+    </v-expansion-panel-content-stub>
+  </v-expansion-panel-stub>
+  <v-expansion-panel-stub>
+    <v-expansion-panel-header-stub expandicon="$expand">
+      Animal based (0/2)
+    </v-expansion-panel-header-stub>
+    <v-expansion-panel-content-stub>
+      <v-list-stub tag="div" tile="true">
+        <v-list-item-group-stub activeclass="v-item--active" multiple="true">
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Oeufs x3</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Jambon x4</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+        </v-list-item-group-stub>
+      </v-list-stub>
+    </v-expansion-panel-content-stub>
+  </v-expansion-panel-stub>
+  <v-expansion-panel-stub>
+    <v-expansion-panel-header-stub expandicon="$expand">
+      Fruits (0/1)
+    </v-expansion-panel-header-stub>
+    <v-expansion-panel-content-stub>
+      <v-list-stub tag="div" tile="true">
+        <v-list-item-group-stub activeclass="v-item--active" multiple="true">
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Pommes x2</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+        </v-list-item-group-stub>
+      </v-list-stub>
+    </v-expansion-panel-content-stub>
+  </v-expansion-panel-stub>
+  <v-expansion-panel-stub>
+    <v-expansion-panel-header-stub expandicon="$expand">
+      Starchy food (0/3)
+    </v-expansion-panel-header-stub>
+    <v-expansion-panel-content-stub>
+      <v-list-stub tag="div" tile="true">
+        <v-list-item-group-stub activeclass="v-item--active" multiple="true">
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Pâtes 250gr</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Riz 1000gr</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Pomme de terre 550gr</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+        </v-list-item-group-stub>
+      </v-list-stub>
+    </v-expansion-panel-content-stub>
+  </v-expansion-panel-stub>
+  <v-expansion-panel-stub>
+    <v-expansion-panel-header-stub expandicon="$expand">Dairy product (0/2)</v-expansion-panel-header-stub>
+    <v-expansion-panel-content-stub>
+      <v-list-stub tag="div" tile="true">
+        <v-list-item-group-stub activeclass="v-item--active" multiple="true">
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Crème fraiche 20cL</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Oeufs x4</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+        </v-list-item-group-stub>
+      </v-list-stub>
+    </v-expansion-panel-content-stub>
+  </v-expansion-panel-stub>
+  <v-expansion-panel-stub>
+    <v-expansion-panel-header-stub expandicon="$expand">Spice / Condiments (0/2)</v-expansion-panel-header-stub>
+    <v-expansion-panel-content-stub>
+      <v-list-stub tag="div" tile="true">
+        <v-list-item-group-stub activeclass="v-item--active" multiple="true">
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Sel</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+          <v-list-item-stub activeclass="grey--text text--accent" tag="div">
+            <v-list-item-content-stub>
+              <v-list-item-title-stub>Ketchup</v-list-item-title-stub>
+            </v-list-item-content-stub>
+            <v-list-item-action-stub>
+              <v-checkbox-stub color="primary" errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" ripple="true" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" indeterminateicon="$checkboxIndeterminate" officon="$checkboxOff" onicon="$checkboxOn"></v-checkbox-stub>
+            </v-list-item-action-stub>
+          </v-list-item-stub>
+        </v-list-item-group-stub>
+      </v-list-stub>
+    </v-expansion-panel-content-stub>
+  </v-expansion-panel-stub>
+</v-expansion-panels-stub>
+`;

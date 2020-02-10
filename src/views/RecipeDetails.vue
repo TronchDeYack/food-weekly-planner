@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col col="12">
+      <v-col cols=12>
         <h3>Spaghetti Bolognaise</h3>
       </v-col>
     </v-row>

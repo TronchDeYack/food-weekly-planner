@@ -24,6 +24,11 @@ const routes = [
     component: RecipeDetails,
   },
   {
+    path: '/shopping',
+    name: 'shopping',
+    component: () => import ('@/views/Shopping.vue'),
+  },
+  {
     path: '/add-recipe',
     name: 'add-recipe',
     component: () => import('@/views/AddRecipe.vue'),

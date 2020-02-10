@@ -4,11 +4,14 @@ exports[`Recipes Should render. 1`] = `
 <v-container-stub tag="div">
   <h2 class="mt-2">Recipes</h2>
   <v-row-stub tag="div">
-    <v-col-stub tag="div">
+    <v-col-stub cols="12" tag="div">
+      <menucard-stub id="RECIPE-1" title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
+      <menucard-stub id="RECIPE-1" title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
+      <menucard-stub id="RECIPE-1" title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
       <menucard-stub id="RECIPE-1" title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
     </v-col-stub>
   </v-row-stub>
-  <v-btn-stub color="secondary" dark="true" tag="button" activeclass="" to="/add-recipe" absolute="true" bottom="true" right="true" fab="true" type="button" class="btn-over-navbar">
+  <v-btn-stub color="secondary" dark="true" tag="button" activeclass="" to="/add-recipe" absolute="true" bottom="true" fixed="true" right="true" fab="true" type="button" class="btn-over-navbar">
     <v-icon-stub>mdi-plus</v-icon-stub>
   </v-btn-stub>
 </v-container-stub>
