@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mt-3 mb-3">
+  <v-card class="mt-3 mb-3" :to="getRecipeDetailsUrl()">
     <v-card-title>{{title}}</v-card-title>
     <v-card-text>
       <v-row align="center">
@@ -42,6 +42,9 @@ import Vegetable from '@/components/icons/Vegetable.vue';
 
 export default {
   props: {
+    id: {
+      type: String,
+    },
     title: {
       type: String,
     },
@@ -71,6 +74,11 @@ export default {
     Meat,
     Timer,
     Vegetable,
+  },
+  methods: {
+    getRecipeDetailsUrl() {
+      return `/recipes/${this.id}`;
+    },
   },
 };
 </script>

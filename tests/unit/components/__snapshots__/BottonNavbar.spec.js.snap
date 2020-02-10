@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BottomNavbar Should render. 1`] = `
-<v-bottom-navigation-stub fixed="true">
-  <v-btn-stub value="menu" to="/"><span>Menu</span>
+<v-bottom-navigation-stub fixed="true" height="56" inputvalue="true" activeclass="v-btn--active">
+  <v-btn-stub tag="button" activeclass="" to="/" type="button" value="menu"><span>Menu</span>
     <v-icon-stub>mdi-chef-hat</v-icon-stub>
   </v-btn-stub>
-  <v-btn-stub value="recipes" to="/recipes"><span>Recipes</span>
+  <v-btn-stub tag="button" activeclass="" to="/recipes" type="button" value="recipes"><span>Recipes</span>
     <v-icon-stub>mdi-noodles</v-icon-stub>
   </v-btn-stub>
-  <v-btn-stub value="shopping"><span>Shopping</span>
+  <v-btn-stub tag="button" activeclass="" type="button" value="shopping"><span>Shopping</span>
     <v-icon-stub>mdi-cart</v-icon-stub>
   </v-btn-stub>
 </v-bottom-navigation-stub>

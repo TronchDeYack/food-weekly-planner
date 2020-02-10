@@ -3,9 +3,9 @@
     <h2 class="mt-2">Recipes</h2>
     <v-row>
       <v-col>
-        <MenuCard title="Spaghetti bolognaise" :minutes=20
+        <MenuCard id="RECIPE-1" title="Spaghetti bolognaise" :minutes=20
           calories-indicator="medium" :has-egg="false" :has-fish="false"
-          :has-meat="true" :is-vegetarian="false" />
+          :has-meat="true" :is-vegetarian="false"/>
       </v-col>
     </v-row>
     <v-btn

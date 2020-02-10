@@ -1,4 +1,12 @@
 import VueTestUtils from '@vue/test-utils';
+import Vue from 'vue';
+import Vuetify from 'vuetify';
+
+Vue.use(Vuetify);
+// Required for Vuetify
+const app = document.createElement('div');
+app.setAttribute('data-app', 'true');
+document.body.appendChild(app);
 
 VueTestUtils.config.mocks = {
   $t: arg => arg,
@@ -10,23 +18,4 @@ VueTestUtils.config.mocks = {
 
 VueTestUtils.config.stubs = {
   'router-link': true,
-  'v-bottom-navigation': true,
-  'v-app-bar': true,
-  'v-btn': true,
-  'v-card': true,
-  'v-card-text': true,
-  'v-card-title': true,
-  'v-chip': true,
-  'v-chip-group': true,
-  'v-col': true,
-  'v-container': true,
-  'v-divider': true,
-  'v-icon': true,
-  'v-row': true,
-  'v-slider': true,
-  'v-stepper': true,
-  'v-stepper-content': true,
-  'v-stepper-step': true,
-  'v-text-field': true,
-  'v-toolbar-title': true,
 };

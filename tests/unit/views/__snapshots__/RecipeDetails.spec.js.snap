@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeDetails Should render. 1`] = `
+<v-container-stub tag="div">
+  <v-row-stub tag="div">
+    <v-col-stub tag="div" col="12">
+      <h3>Spaghetti Bolognaise</h3>
+    </v-col-stub>
+  </v-row-stub>
+  <v-row-stub tag="div" align="center">
+    <v-col-stub tag="div" class="d-flex align-center">
+      <timer-stub></timer-stub>
+      20 min
+    </v-col-stub>
+    <v-col-stub tag="div">
+      <calories-stub class="medium"></calories-stub>
+    </v-col-stub>
+  </v-row-stub>
+  <v-divider-stub></v-divider-stub>
+  <v-row-stub tag="div">
+    <v-col-stub cols="12" tag="div" class="pb-0">
+      <h4>Ingrédients</h4>
+    </v-col-stub>
+    <v-col-stub cols="12" tag="div" class="pt-0">
+      <v-list-stub tag="div" tile="true">
+        <v-list-item-stub activeclass="" tag="div">
+          <v-list-item-content-stub>
+            Pâtes: 200 gr
+          </v-list-item-content-stub>
+        </v-list-item-stub>
+        <v-list-item-stub activeclass="" tag="div">
+          <v-list-item-content-stub>
+            Sauce tomate: 200 gr
+          </v-list-item-content-stub>
+        </v-list-item-stub>
+        <v-list-item-stub activeclass="" tag="div">
+          <v-list-item-content-stub>
+            Steak haché: 100 gr
+          </v-list-item-content-stub>
+        </v-list-item-stub>
+        <v-list-item-stub activeclass="" tag="div">
+          <v-list-item-content-stub>
+            Huile d'olives: 3 cac
+          </v-list-item-content-stub>
+        </v-list-item-stub>
+      </v-list-stub>
+    </v-col-stub>
+  </v-row-stub>
+</v-container-stub>
+`;

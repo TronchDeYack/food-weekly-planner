@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import MenuOfTheWeek from '../views/MenuOfTheWeek.vue';
 import Recipes from '../views/Recipes.vue';
+import RecipeDetails from '../views/RecipeDetails.vue';
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/recipes',
     name: 'recipes',
     component: Recipes,
+  },
+  {
+    path: '/recipes/:id',
+    name: 'recipe-details',
+    component: RecipeDetails,
   },
   {
     path: '/add-recipe',

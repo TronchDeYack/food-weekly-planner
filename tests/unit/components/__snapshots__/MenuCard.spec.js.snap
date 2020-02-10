@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MenuCard Should render. 1`] = `
-<v-card-stub class="mt-3 mb-3">
+<v-card-stub loaderheight="4" to="/recipes/ID" tag="div" class="mt-3 mb-3">
   <v-card-title-stub>TITLE</v-card-title-stub>
   <v-card-text-stub>
-    <v-row-stub align="center">
-      <v-col-stub class="d-flex align-center">
+    <v-row-stub tag="div" align="center">
+      <v-col-stub tag="div" class="d-flex align-center">
         <timer-stub></timer-stub>
         30 min
       </v-col-stub>
-      <v-col-stub>
+      <v-col-stub tag="div">
         <calories-stub class="high"></calories-stub>
       </v-col-stub>
     </v-row-stub>
@@ -17,17 +17,17 @@ exports[`MenuCard Should render. 1`] = `
   <v-divider-stub class="mx-4"></v-divider-stub>
   <v-card-text-stub>
     Contient
-    <v-chip-group-stub column="">
-      <v-chip-stub label="">
+    <v-chip-group-stub activeclass="v-slide-item--active" nexticon="$next" mobilebreakpoint="1264" previcon="$prev" column="true">
+      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
         <egg-stub></egg-stub>
       </v-chip-stub>
-      <v-chip-stub label="">
+      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
         <fish-stub></fish-stub>
       </v-chip-stub>
-      <v-chip-stub label="">
+      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
         <meat-stub disabled="true"></meat-stub>
       </v-chip-stub>
-      <v-chip-stub label="">
+      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
         <vegetable-stub disabled="true"></vegetable-stub>
       </v-chip-stub>
     </v-chip-group-stub>
