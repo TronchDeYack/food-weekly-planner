@@ -6,24 +6,10 @@
     </div>
     <v-row>
       <v-col>
-        <MenuCard title="Spaghetti bolognaise" :minutes=20
-          calories-indicator="medium" :has-egg="false" :has-fish="false"
-          :has-meat="true" :is-vegetarian="false" />
-        <MenuCard title="Soupe de légumes" :minutes=30
-          calories-indicator="low" :has-egg="false" :has-fish="false"
-          :has-meat="false" :is-vegetarian="true" />
-        <MenuCard title="Sushi x48" :minutes=5
-          calories-indicator="high" :has-egg="true" :has-fish="true"
-          :has-meat="true" :is-vegetarian="false" />
-        <MenuCard title="Spaghetti bolognaise" :minutes=20
-          calories-indicator="medium" :has-egg="false" :has-fish="false"
-          :has-meat="true" :is-vegetarian="false" />
-        <MenuCard title="Soupe de légumes" :minutes=30
-          calories-indicator="low" :has-egg="false" :has-fish="false"
-          :has-meat="false" :is-vegetarian="true" />
-        <MenuCard title="Sushi x48" :minutes=5
-          calories-indicator="high" :has-egg="true" :has-fish="true"
-          :has-meat="true" :is-vegetarian="false" />
+        <MenuCard v-for="recipe in this.recipes" :key="recipe.id"
+          :id="recipe.id" :title="recipe.title" :calories-level="recipe.caloriesLevel"
+          :ingredients="recipe.ingredients" :minutes="recipe.minutes"
+        />
       </v-col>
     </v-row>
   </v-container>
@@ -31,11 +17,22 @@
 
 <script>
 import MenuCard from '@/components/MenuCard.vue';
+import { getRecipesOfTheWeek } from '@/api';
 
 export default {
   name: 'menu-of-the-week',
   components: {
     MenuCard,
+  },
+  data() {
+    return {
+      recipes: [],
+    };
+  },
+  mounted() {
+    getRecipesOfTheWeek().then((recipes) => {
+      this.recipes = recipes;
+    });
   },
 };
 </script>

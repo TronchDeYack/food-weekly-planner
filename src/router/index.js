@@ -22,6 +22,7 @@ const routes = [
     path: '/recipes/:id',
     name: 'recipe-details',
     component: RecipeDetails,
+    props: true,
   },
   {
     path: '/shopping',

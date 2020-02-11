@@ -3,18 +3,10 @@
     <h2 class="mt-2">Recipes</h2>
     <v-row>
       <v-col cols=12>
-        <MenuCard id="RECIPE-1" title="Spaghetti bolognaise" :minutes=20
-          calories-indicator="medium" :has-egg="false" :has-fish="false"
-          :has-meat="true" :is-vegetarian="false"/>
-        <MenuCard id="RECIPE-1" title="Spaghetti bolognaise" :minutes=20
-          calories-indicator="medium" :has-egg="false" :has-fish="false"
-          :has-meat="true" :is-vegetarian="false"/>
-        <MenuCard id="RECIPE-1" title="Spaghetti bolognaise" :minutes=20
-          calories-indicator="medium" :has-egg="false" :has-fish="false"
-          :has-meat="true" :is-vegetarian="false"/>
-        <MenuCard id="RECIPE-1" title="Spaghetti bolognaise" :minutes=20
-          calories-indicator="medium" :has-egg="false" :has-fish="false"
-          :has-meat="true" :is-vegetarian="false"/>
+        <MenuCard v-for="recipe in this.recipes" :key="recipe.id"
+          :id="recipe.id" :title="recipe.title" :calories-level="recipe.caloriesLevel"
+          :ingredients="recipe.ingredients" :minutes="recipe.minutes"
+        />
       </v-col>
     </v-row>
     <v-btn
@@ -36,11 +28,22 @@
 
 <script>
 import MenuCard from '@/components/MenuCard.vue';
+import { getRecipes } from '@/api';
 
 export default {
   name: 'recipes',
   components: {
     MenuCard,
+  },
+  data() {
+    return {
+      recipes: [],
+    };
+  },
+  mounted() {
+    getRecipes().then((recipes) => {
+      this.recipes = recipes;
+    });
   },
 };
 </script>

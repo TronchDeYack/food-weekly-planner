@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="mt-3">
     <v-bottom-navigation :fixed="true">
       <v-btn value="menu" to="/">
         <span>Menu</span>

@@ -1,14 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Recipes Should render. 1`] = `
+exports[`Recipes render Should render. 1`] = `
 <v-container-stub tag="div">
   <h2 class="mt-2">Recipes</h2>
   <v-row-stub tag="div">
     <v-col-stub cols="12" tag="div">
-      <menucard-stub id="RECIPE-1" title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
-      <menucard-stub id="RECIPE-1" title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
-      <menucard-stub id="RECIPE-1" title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
-      <menucard-stub id="RECIPE-1" title="Spaghetti bolognaise" minutes="20" caloriesindicator="medium" hasmeat="true"></menucard-stub>
+      <menucard-stub id="SOUPE-ID" title="Soupe à la tomate" minutes="30" calorieslevel="low" ingredients="[object Object],[object Object]"></menucard-stub>
+      <menucard-stub id="WELSH-ID" title="Welsh" minutes="45" calorieslevel="high" ingredients="[object Object],[object Object],[object Object],[object Object]"></menucard-stub>
     </v-col-stub>
   </v-row-stub>
   <v-btn-stub color="secondary" dark="true" tag="button" activeclass="" to="/add-recipe" absolute="true" bottom="true" fixed="true" right="true" fab="true" type="button" class="btn-over-navbar">

@@ -8,7 +8,7 @@
           {{minutes}} min
         </v-col>
         <v-col>
-          <Calories :class="caloriesIndicator"/>
+          <Calories :class="caloriesLevel"/>
         </v-col>
       </v-row>
     </v-card-text>
@@ -16,10 +16,10 @@
     <v-card-text>
       Contient
       <v-chip-group column>
-        <v-chip label><Egg :disabled="!hasEgg"/></v-chip>
-        <v-chip label><Fish :disabled="!hasFish"/></v-chip>
-        <v-chip label><Meat :disabled="!hasMeat"/></v-chip>
-        <v-chip label><Vegetable :disabled="!isVegetarian"/></v-chip>
+        <v-chip label><Egg :disabled="!this.hasEgg"/></v-chip>
+        <v-chip label><Fish :disabled="!this.hasFish"/></v-chip>
+        <v-chip label><Meat :disabled="!this.hasMeat"/></v-chip>
+        <v-chip label><Vegetable :disabled="!this.isVegetarian"/></v-chip>
       </v-chip-group>
     </v-card-text>
   </v-card>
@@ -51,20 +51,11 @@ export default {
     minutes: {
       type: Number,
     },
-    caloriesIndicator: {
+    caloriesLevel: {
       type: String,
     },
-    hasEgg: {
-      type: Boolean,
-    },
-    hasMeat: {
-      type: Boolean,
-    },
-    hasFish: {
-      type: Boolean,
-    },
-    isVegetarian: {
-      type: Boolean,
+    ingredients: {
+      type: Array,
     },
   },
   components: {
@@ -78,6 +69,20 @@ export default {
   methods: {
     getRecipeDetailsUrl() {
       return `/recipes/${this.id}`;
+    },
+  },
+  computed: {
+    hasEgg() {
+      return !!this.ingredients.find(ingredient => ingredient.type === 'EGG');
+    },
+    hasMeat() {
+      return !!this.ingredients.find(ingredient => ingredient.type === 'MEAT');
+    },
+    hasFish() {
+      return !!this.ingredients.find(ingredient => ingredient.type === 'FISH');
+    },
+    isVegetarian() {
+      return !this.ingredients.find(ingredient => ingredient.type === 'FISH' || ingredient.type === 'MEAT');
     },
   },
 };

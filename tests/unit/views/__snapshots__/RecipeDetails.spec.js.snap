@@ -4,7 +4,7 @@ exports[`RecipeDetails Should render. 1`] = `
 <v-container-stub tag="div">
   <v-row-stub tag="div">
     <v-col-stub cols="12" tag="div">
-      <h3>Spaghetti Bolognaise</h3>
+      <h3>Spaghetti bolognaise</h3>
     </v-col-stub>
   </v-row-stub>
   <v-row-stub tag="div" align="center">
@@ -30,7 +30,7 @@ exports[`RecipeDetails Should render. 1`] = `
         </v-list-item-stub>
         <v-list-item-stub activeclass="" tag="div">
           <v-list-item-content-stub>
-            Sauce tomate: 200 gr
+            Sauce Tomate: 200 gr
           </v-list-item-content-stub>
         </v-list-item-stub>
         <v-list-item-stub activeclass="" tag="div">

@@ -19,16 +19,16 @@ exports[`MenuCard Should render. 1`] = `
     Contient
     <v-chip-group-stub activeclass="v-slide-item--active" nexticon="$next" mobilebreakpoint="1264" previcon="$prev" column="true">
       <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
-        <egg-stub></egg-stub>
+        <egg-stub disabled="true"></egg-stub>
       </v-chip-stub>
       <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
-        <fish-stub></fish-stub>
+        <fish-stub disabled="true"></fish-stub>
       </v-chip-stub>
       <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
         <meat-stub disabled="true"></meat-stub>
       </v-chip-stub>
       <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
-        <vegetable-stub disabled="true"></vegetable-stub>
+        <vegetable-stub></vegetable-stub>
       </v-chip-stub>
     </v-chip-group-stub>
   </v-card-text-stub>
