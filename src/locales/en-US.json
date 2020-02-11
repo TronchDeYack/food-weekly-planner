@@ -1,0 +1,38 @@
+{
+  "common": {
+    "applicationName": "Food Weekly Planner",
+    "btn": {
+      "cancel": "Cancel",
+      "continue": "Continuer"
+    }
+  },
+  "menu": {
+    "title": "Menu of the week",
+    "regenerate": "Regenerate"
+  },
+  "recipes": {
+    "title": "Recipes",
+    "minutes": "min",
+    "contains": "Contains",
+    "ingredients": "Ingredients"
+  },
+  "navigation": {
+    "menu": "Menu",
+    "recipes": "Recipes",
+    "shopping": "Shopping"
+  },
+  "addRecipe": {
+    "steps": {
+      "newTitle": "Name the recipe",
+      "minutes": "How many minutes to prepare it ?",
+      "calories": "What is the level of calories ?",
+      "starchyFood": "What are the starchies food ?",
+      "vegetables": "What are the vegetables ?",
+      "animalBased": "What are the animal based ingredients ?",
+      "fruits": "What are the fruits ?",
+      "dairyProducts": "What are the dairy products ?",
+      "condiments": "What are the spices / condiments ?",
+      "others": "What are the others ingredients ?"
+    }
+  }
+}

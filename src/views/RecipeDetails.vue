@@ -8,7 +8,7 @@
     <v-row align="center">
       <v-col class="d-flex align-center">
         <Timer />
-        {{ this.recipe.minutes }} min
+        {{ this.recipe.minutes }} {{ $t('recipes.minutes') }}
       </v-col>
       <v-col>
         <Calories :class="this.recipe.caloriesLevel"/>
@@ -17,7 +17,7 @@
     <v-divider/>
     <v-row>
       <v-col cols=12 class="pb-0">
-        <h4>Ingrédients</h4>
+        <h4>{{ $t('recipes.ingredients') }}</h4>
       </v-col>
       <v-col cols=12 class="pt-0">
         <v-list>

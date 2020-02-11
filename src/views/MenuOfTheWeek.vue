@@ -1,8 +1,8 @@
 <template>
   <v-container>
     <div class="d-flex align-center justify-space-between mt-2">
-      <h2>Menu of the week</h2>
-      <v-btn color="primary">Regenerate</v-btn>
+      <h2>{{ $t('menu.title') }}</h2>
+      <v-btn color="primary">{{ $t('menu.regenerate') }}</v-btn>
     </div>
     <v-row>
       <v-col>

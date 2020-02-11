@@ -7,7 +7,7 @@ exports[`MenuCard Should render. 1`] = `
     <v-row-stub tag="div" align="center">
       <v-col-stub tag="div" class="d-flex align-center">
         <timer-stub></timer-stub>
-        30 min
+        30 recipes.minutes
       </v-col-stub>
       <v-col-stub tag="div">
         <calories-stub class="high"></calories-stub>
@@ -16,7 +16,7 @@ exports[`MenuCard Should render. 1`] = `
   </v-card-text-stub>
   <v-divider-stub class="mx-4"></v-divider-stub>
   <v-card-text-stub>
-    Contient
+    recipes.contains
     <v-chip-group-stub activeclass="v-slide-item--active" nexticon="$next" mobilebreakpoint="1264" previcon="$prev" column="true">
       <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
         <egg-stub disabled="true"></egg-stub>

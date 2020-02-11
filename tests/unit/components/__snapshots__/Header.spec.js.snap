@@ -2,6 +2,8 @@
 
 exports[`Header Should render. 1`] = `
 <v-app-bar-stub color="primary" tag="header" tile="true" extensionheight="48" src="" value="true" app="true">
-  <v-toolbar-title-stub class="header-title font-weight-black">Food Weekly Planner</v-toolbar-title-stub>
+  <v-toolbar-title-stub class="header-title font-weight-black">
+    common.applicationName
+  </v-toolbar-title-stub>
 </v-app-bar-stub>
 `;

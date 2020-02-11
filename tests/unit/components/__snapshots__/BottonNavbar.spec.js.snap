@@ -3,13 +3,13 @@
 exports[`BottomNavbar Should render. 1`] = `
 <v-container-stub tag="div" class="mt-3">
   <v-bottom-navigation-stub fixed="true" height="56" inputvalue="true" activeclass="v-btn--active">
-    <v-btn-stub tag="button" activeclass="" to="/" type="button" value="menu"><span>Menu</span>
+    <v-btn-stub tag="button" activeclass="" to="/" type="button" value="menu"><span>navigation.menu</span>
       <v-icon-stub>mdi-chef-hat</v-icon-stub>
     </v-btn-stub>
-    <v-btn-stub tag="button" activeclass="" to="/recipes" type="button" value="recipes"><span>Recipes</span>
+    <v-btn-stub tag="button" activeclass="" to="/recipes" type="button" value="recipes"><span>navigation.recipes</span>
       <v-icon-stub>mdi-noodles</v-icon-stub>
     </v-btn-stub>
-    <v-btn-stub tag="button" activeclass="" to="/shopping" type="button" value="shopping"><span>Shopping</span>
+    <v-btn-stub tag="button" activeclass="" to="/shopping" type="button" value="shopping"><span>navigation.shopping</span>
       <v-icon-stub>mdi-cart</v-icon-stub>
     </v-btn-stub>
   </v-bottom-navigation-stub>

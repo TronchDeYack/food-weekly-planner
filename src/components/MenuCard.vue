@@ -5,7 +5,7 @@
       <v-row align="center">
         <v-col class="d-flex align-center">
           <Timer />
-          {{minutes}} min
+          {{ minutes }} {{ $t('recipes.minutes') }}
         </v-col>
         <v-col>
           <Calories :class="caloriesLevel"/>
@@ -14,7 +14,7 @@
     </v-card-text>
     <v-divider class="mx-4"></v-divider>
     <v-card-text>
-      Contient
+      {{ $t('recipes.contains') }}
       <v-chip-group column>
         <v-chip label><Egg :disabled="!this.hasEgg"/></v-chip>
         <v-chip label><Fish :disabled="!this.hasFish"/></v-chip>

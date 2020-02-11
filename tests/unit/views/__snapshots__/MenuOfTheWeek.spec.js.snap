@@ -3,8 +3,8 @@
 exports[`MenuOfTheWeek render Should render. 1`] = `
 <v-container-stub tag="div">
   <div class="d-flex align-center justify-space-between mt-2">
-    <h2>Menu of the week</h2>
-    <v-btn-stub color="primary" tag="button" activeclass="" type="button">Regenerate</v-btn-stub>
+    <h2>menu.title</h2>
+    <v-btn-stub color="primary" tag="button" activeclass="" type="button">menu.regenerate</v-btn-stub>
   </div>
   <v-row-stub tag="div">
     <v-col-stub tag="div">
