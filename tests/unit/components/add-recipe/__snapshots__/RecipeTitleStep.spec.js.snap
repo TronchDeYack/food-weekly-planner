@@ -4,7 +4,7 @@ exports[`RecipeTitleStep render Should render. 1`] = `
 <div>
   <steptitle-stub title="EAT ME" step="2"></steptitle-stub>
   <stepcontent-stub step="2">
-    <v-text-field-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" label="addRecipe.titleLabel" loaderheight="2" clearicon="$clear" type="text"></v-text-field-stub>
+    <v-text-field-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" label="addRecipe.steps.titleLabel" loaderheight="2" clearicon="$clear" type="text"></v-text-field-stub>
   </stepcontent-stub>
 </div>
 `;

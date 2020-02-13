@@ -2,7 +2,7 @@
   <div>
     <StepTitle :complete="complete" :step="step" :title="title" />
     <StepContent :step="step" @next-step="nextStep" @previous-step="previousStep">
-      <v-text-field :label="$t('addRecipe.titleLabel')" />
+      <v-text-field :label="$t('addRecipe.steps.titleLabel')" />
     </StepContent>
   </div>
 </template>
