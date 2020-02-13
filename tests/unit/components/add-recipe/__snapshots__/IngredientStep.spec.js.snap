@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IngredientStep render Should render. 1`] = `
+<div>
+  <steptitle-stub title="EAT ME" step="2"></steptitle-stub>
+  <stepcontent-stub step="2">
+    <v-chip-group-stub activeclass="primary" multiple="true" nexticon="$next" mobilebreakpoint="1264" previcon="$prev">
+      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
+        Sauce Tomate
+      </v-chip-stub>
+      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
+        Huile d'olives
+      </v-chip-stub>
+      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
+        Sel
+      </v-chip-stub>
+    </v-chip-group-stub>
+  </stepcontent-stub>
+</div>
+`;

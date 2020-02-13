@@ -3,128 +3,16 @@
 exports[`AddRecipe Should render. 1`] = `
 <v-container-stub tag="div">
   <v-stepper-stub value="1" vertical="true">
-    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="1">
-      addRecipe.steps.newTitle
-    </v-stepper-step-stub>
-    <v-stepper-content-stub step="1">
-      <v-text-field-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" label="Title" loaderheight="2" clearicon="$clear" type="text"></v-text-field-stub>
-      <div class="mt-2">
-        <v-btn-stub color="primary" tag="button" activeclass="" type="button">common.btn.continue</v-btn-stub>
-        <v-btn-stub tag="button" activeclass="" text="true" type="button">common.btn.cancel</v-btn-stub>
-      </div>
-    </v-stepper-content-stub>
-    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="2">
-      addRecipe.steps.minutes
-    </v-stepper-step-stub>
-    <v-stepper-content-stub step="2">
-      <v-slider-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" loaderheight="2" max="6" min="0" step="1" thumbsize="32" ticklabels="5,10,15,30,45,60,+ 60" ticks="always" ticksize="3"></v-slider-stub>
-      <div class="mt-2">
-        <v-btn-stub color="primary" tag="button" activeclass="" type="button">common.btn.continue</v-btn-stub>
-        <v-btn-stub tag="button" activeclass="" text="true" type="button">common.btn.cancel</v-btn-stub>
-      </div>
-    </v-stepper-content-stub>
-    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="3">
-      addRecipe.steps.calories
-    </v-stepper-step-stub>
-    <v-stepper-content-stub step="3">
-      <v-slider-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" loaderheight="2" max="2" min="0" step="1" thumbsize="32" ticklabels="Low,Medium,High" ticks="always" ticksize="3"></v-slider-stub>
-      <div class="mt-2">
-        <v-btn-stub color="primary" tag="button" activeclass="" type="button">common.btn.continue</v-btn-stub>
-        <v-btn-stub tag="button" activeclass="" text="true" type="button">common.btn.cancel</v-btn-stub>
-      </div>
-    </v-stepper-content-stub>
-    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="4">
-      addRecipe.steps.starchyFood
-    </v-stepper-step-stub>
-    <v-stepper-content-stub step="4">
-      <v-chip-group-stub activeclass="primary" multiple="true" nexticon="$next" mobilebreakpoint="1264" previcon="$prev" column="true">
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Riz</v-chip-stub>
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Pâte</v-chip-stub>
-      </v-chip-group-stub>
-      <div class="mt-2">
-        <v-btn-stub color="primary" tag="button" activeclass="" type="button">common.btn.continue</v-btn-stub>
-        <v-btn-stub tag="button" activeclass="" text="true" type="button">common.btn.cancel</v-btn-stub>
-      </div>
-    </v-stepper-content-stub>
-    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="5">
-      addRecipe.steps.vegetables
-    </v-stepper-step-stub>
-    <v-stepper-content-stub step="5">
-      <v-chip-group-stub activeclass="primary" multiple="true" nexticon="$next" mobilebreakpoint="1264" previcon="$prev">
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Carotte</v-chip-stub>
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Poireaux</v-chip-stub>
-      </v-chip-group-stub>
-      <div class="mt-2">
-        <v-btn-stub color="primary" tag="button" activeclass="" type="button">common.btn.continue</v-btn-stub>
-        <v-btn-stub tag="button" activeclass="" text="true" type="button">common.btn.cancel</v-btn-stub>
-      </div>
-    </v-stepper-content-stub>
-    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="6">
-      addRecipe.steps.animalBased
-    </v-stepper-step-stub>
-    <v-stepper-content-stub step="6">
-      <v-chip-group-stub activeclass="primary" multiple="true" nexticon="$next" mobilebreakpoint="1264" previcon="$prev" column="true">
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Steak haché</v-chip-stub>
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Jambon</v-chip-stub>
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Oeuf</v-chip-stub>
-      </v-chip-group-stub>
-      <div class="mt-2">
-        <v-btn-stub color="primary" tag="button" activeclass="" type="button">common.btn.continue</v-btn-stub>
-        <v-btn-stub tag="button" activeclass="" text="true" type="button">common.btn.cancel</v-btn-stub>
-      </div>
-    </v-stepper-content-stub>
-    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="7">
-      addRecipe.steps.fruits
-    </v-stepper-step-stub>
-    <v-stepper-content-stub step="7">
-      <v-chip-group-stub activeclass="primary" multiple="true" nexticon="$next" mobilebreakpoint="1264" previcon="$prev">
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Pomme</v-chip-stub>
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Banane</v-chip-stub>
-      </v-chip-group-stub>
-      <div class="mt-2">
-        <v-btn-stub color="primary" tag="button" activeclass="" type="button">common.btn.continue</v-btn-stub>
-        <v-btn-stub tag="button" activeclass="" text="true" type="button">common.btn.cancel</v-btn-stub>
-      </div>
-    </v-stepper-content-stub>
-    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="8">
-      addRecipe.steps.dairyProducts
-    </v-stepper-step-stub>
-    <v-stepper-content-stub step="8">
-      <v-chip-group-stub activeclass="primary" multiple="true" nexticon="$next" mobilebreakpoint="1264" previcon="$prev">
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Crème fraiche</v-chip-stub>
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Lait</v-chip-stub>
-      </v-chip-group-stub>
-      <div class="mt-2">
-        <v-btn-stub color="primary" tag="button" activeclass="" type="button">common.btn.continue</v-btn-stub>
-        <v-btn-stub tag="button" activeclass="" text="true" type="button">common.btn.cancel</v-btn-stub>
-      </div>
-    </v-stepper-content-stub>
-    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="9">
-      addRecipe.steps.condiments
-    </v-stepper-step-stub>
-    <v-stepper-content-stub step="9">
-      <v-chip-group-stub activeclass="primary" multiple="true" nexticon="$next" mobilebreakpoint="1264" previcon="$prev">
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Ketchup</v-chip-stub>
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Sel de guérande</v-chip-stub>
-      </v-chip-group-stub>
-      <div class="mt-2">
-        <v-btn-stub color="primary" tag="button" activeclass="" type="button">common.btn.continue</v-btn-stub>
-        <v-btn-stub tag="button" activeclass="" text="true" type="button">common.btn.cancel</v-btn-stub>
-      </div>
-    </v-stepper-content-stub>
-    <v-stepper-step-stub color="primary" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="10">
-      addRecipe.steps.others
-    </v-stepper-step-stub>
-    <v-stepper-content-stub step="10">
-      <v-chip-group-stub activeclass="primary" multiple="true" nexticon="$next" mobilebreakpoint="1264" previcon="$prev">
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Vin blanc</v-chip-stub>
-        <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">Levure</v-chip-stub>
-      </v-chip-group-stub>
-      <div class="mt-2">
-        <v-btn-stub color="primary" tag="button" activeclass="" type="button">common.btn.continue</v-btn-stub>
-        <v-btn-stub tag="button" activeclass="" text="true" type="button">common.btn.cancel</v-btn-stub>
-      </div>
-    </v-stepper-content-stub>
+    <recipetitlestep-stub title="addRecipe.steps.newTitle" step="1"></recipetitlestep-stub>
+    <minutestep-stub title="addRecipe.steps.minutes" step="2"></minutestep-stub>
+    <calorieslevelstep-stub title="addRecipe.steps.calories" step="3"></calorieslevelstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.starchyFood" step="4" ingredients="[object Object],[object Object],[object Object]" ingredienttype="STARCHY-FOOD"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.vegetables" step="5" ingredients="[object Object],[object Object],[object Object]" ingredienttype="VEGETABLE"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.animalBased" step="6" ingredients="[object Object],[object Object],[object Object]" ingredienttype="MEAT"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.fruits" step="7" ingredients="[object Object],[object Object],[object Object]" ingredienttype="FRUIT"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.dairyProducts" step="8" ingredients="[object Object],[object Object],[object Object]" ingredienttype="DAIRY-PRODUCT"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.condiments" step="9" ingredients="[object Object],[object Object],[object Object]" ingredienttype="CONDIMENT"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.others" step="10" ingredients="[object Object],[object Object],[object Object]" ingredienttype="OTHER"></ingredientstep-stub>
   </v-stepper-stub>
 </v-container-stub>
 `;

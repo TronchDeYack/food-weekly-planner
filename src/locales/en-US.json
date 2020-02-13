@@ -24,6 +24,7 @@
   "addRecipe": {
     "steps": {
       "newTitle": "Name the recipe",
+      "titleLabel": "Title",
       "minutes": "How many minutes to prepare it ?",
       "calories": "What is the level of calories ?",
       "starchyFood": "What are the starchies food ?",

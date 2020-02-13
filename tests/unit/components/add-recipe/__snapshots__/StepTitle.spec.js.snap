@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepTitle render Should render. 1`] = `
+<v-stepper-step-stub color="primary" complete="true" completeicon="$complete" editicon="$edit" erroricon="$error" rules="" step="2">
+  DUQ
+</v-stepper-step-stub>
+`;

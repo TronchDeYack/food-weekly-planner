@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepActions render Should render. 1`] = `
+<div class="mt-2">
+  <v-btn-stub color="primary" tag="button" activeclass="" type="button" class="continue-btn">
+    common.btn.continue
+  </v-btn-stub>
+  <v-btn-stub tag="button" activeclass="" text="true" type="button" class="cancel-btn">
+    common.btn.cancel
+  </v-btn-stub>
+</div>
+`;

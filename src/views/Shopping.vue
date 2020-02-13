@@ -61,9 +61,6 @@ export default {
       );
       this.ingredients[ingredientIndex].bought = !this.ingredients[ingredientIndex].bought;
     },
-    getDuQ() {
-      return this.ingredients.filter(ingredient => ingredient.bought);
-    },
   },
   computed: {
     shoppingCategories() {

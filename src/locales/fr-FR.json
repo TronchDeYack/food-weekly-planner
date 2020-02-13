@@ -24,6 +24,7 @@
   "addRecipe": {
     "steps": {
       "newTitle": "Nommez la recette",
+      "titleLabel": "Titre",
       "minutes": "Combien de minutes pour la préparer ?",
       "calories": "Quel est le niveau de calories ?",
       "starchyFood": "Listez les féculents",

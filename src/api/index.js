@@ -162,3 +162,78 @@ export function getShoppingList() {
     },
   ]);
 }
+
+export function getIngredients() {
+  return Promise.resolve([
+    {
+      id: 'PATE-ID',
+      label: 'Pâtes',
+      quantity: 200,
+      unit: 'GR',
+      type: 'STARCHY-FOOD',
+    },
+    {
+      id: 'SAUCE-TOMATE-ID',
+      label: 'Sauce Tomate',
+      quantity: 200,
+      unit: 'GR',
+      type: 'CONDIMENT',
+    },
+    {
+      id: 'STEAK-ID',
+      label: 'Steak haché',
+      quantity: 100,
+      unit: 'GR',
+      type: 'MEAT',
+    },
+    {
+      id: 'OIL-ID',
+      label: 'Huile d\'olives',
+      quantity: 3,
+      unit: 'CAC',
+      type: 'CONDIMENT',
+    },
+    {
+      id: 'TOMATE-ID',
+      label: 'Tomates',
+      quantity: 4,
+      unit: 'UNIT',
+      type: 'VEGETABLE',
+    },
+    {
+      id: 'SALT-ID',
+      label: 'Sel',
+      quantity: 2,
+      unit: 'CAC',
+      type: 'CONDIMENT',
+    },
+    {
+      id: 'CHEDDAR-ID',
+      label: 'Cheddar',
+      quantity: 400,
+      unit: 'GR',
+      type: 'DAIRY-PRODUCT',
+    },
+    {
+      id: 'BEER-ID',
+      label: 'Bière brune',
+      quantity: 25,
+      unit: 'CL',
+      type: 'OTHER',
+    },
+    {
+      id: 'HAM-ID',
+      label: 'Jambon',
+      quantity: 100,
+      unit: 'GR',
+      type: 'MEAT',
+    },
+    {
+      id: 'BREAD-ID',
+      label: 'Pain',
+      quantity: 4,
+      unit: 'SLICE',
+      type: 'STARCHY-FOOD',
+    },
+  ]);
+}

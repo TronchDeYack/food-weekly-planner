@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MinuteStep render Should render. 1`] = `
+<div>
+  <steptitle-stub title="EAT ME" step="2"></steptitle-stub>
+  <stepcontent-stub step="2">
+    <v-slider-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" loaderheight="2" max="6" min="0" step="1" thumbsize="32" ticklabels="5,10,15,30,45,60,+ 60" ticks="always" ticksize="3"></v-slider-stub>
+  </stepcontent-stub>
+</div>
+`;

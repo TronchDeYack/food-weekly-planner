@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StepContent render Should render. 1`] = `
+<v-stepper-content-stub step="2">
+  <stepactions-stub step="2"></stepactions-stub>
+</v-stepper-content-stub>
+`;

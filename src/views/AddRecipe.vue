@@ -1,179 +1,97 @@
 <template>
   <v-container>
-    <v-stepper v-model="e6" vertical>
-      <v-stepper-step :complete="e6 > 1" step="1">
-        {{ $t('addRecipe.steps.newTitle') }}
-      </v-stepper-step>
+    <v-stepper v-model="currentStep" vertical>
+      <RecipeTitleStep :title="$t('addRecipe.steps.newTitle')"
+        :step="1" :complete="currentStep > 1"
+        @next-step="updateStep" @previous-step="updateStep"
+      />
 
-      <v-stepper-content step="1">
-        <v-text-field label="Title" />
-        <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 2">{{ $t('common.btn.continue') }}</v-btn>
-          <v-btn text>{{ $t('common.btn.cancel') }}</v-btn>
-        </div>
-      </v-stepper-content>
+      <MinuteStep :title="$t('addRecipe.steps.minutes')"
+        :step="2" :complete="currentStep > 2"
+        @next-step="updateStep" @previous-step="updateStep"
+      />
 
-      <v-stepper-step :complete="e6 > 2" step="2">
-        {{ $t('addRecipe.steps.minutes') }}
-      </v-stepper-step>
+      <CaloriesLevelStep :title="$t('addRecipe.steps.calories')"
+        :step="3" :complete="currentStep > 3"
+        @next-step="updateStep" @previous-step="updateStep"
+      />
 
-      <v-stepper-content step="2">
-        <v-slider
-          :tick-labels="minutesLabel"
-          :max="minutesLabel.length - 1"
-          step="1"
-          ticks="always"
-          tick-size="3"
-        ></v-slider>
-        <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 3">{{ $t('common.btn.continue') }}</v-btn>
-          <v-btn text>{{ $t('common.btn.cancel') }}</v-btn>
-        </div>
-      </v-stepper-content>
+      <IngredientStep :title="$t('addRecipe.steps.starchyFood')"
+        :step="4" :complete="currentStep > 4"
+        :ingredients="ingredients" ingredient-type="STARCHY-FOOD"
+        @next-step="updateStep" @previous-step="updateStep"
+      />
 
-      <v-stepper-step :complete="e6 > 3" step="3">
-        {{ $t('addRecipe.steps.calories') }}
-      </v-stepper-step>
+      <IngredientStep :title="$t('addRecipe.steps.vegetables')"
+        :step="5" :complete="currentStep > 5"
+        :ingredients="ingredients" ingredient-type="VEGETABLE"
+        @next-step="updateStep" @previous-step="updateStep"
+      />
 
-      <v-stepper-content :complete="e6 > 4" step="3">
-        <v-slider
-          :tick-labels="caloriesLabel"
-          :max="caloriesLabel.length - 1"
-          step="1"
-          ticks="always"
-          tick-size="3"
-        ></v-slider>
-        <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 4">{{ $t('common.btn.continue') }}</v-btn>
-          <v-btn text>{{ $t('common.btn.cancel') }}</v-btn>
-        </div>
-      </v-stepper-content>
+      <IngredientStep :title="$t('addRecipe.steps.animalBased')"
+        :step="6" :complete="currentStep > 6"
+        :ingredients="ingredients" ingredient-type="MEAT"
+        @next-step="updateStep" @previous-step="updateStep"
+      />
 
-      <v-stepper-step :complete="e6 > 4" step="4">
-        {{ $t('addRecipe.steps.starchyFood') }}
-      </v-stepper-step>
+      <IngredientStep :title="$t('addRecipe.steps.fruits')"
+        :step="7" :complete="currentStep > 7"
+        :ingredients="ingredients" ingredient-type="FRUIT"
+        @next-step="updateStep" @previous-step="updateStep"
+      />
 
-      <v-stepper-content step="4">
-        <v-chip-group multiple active-class="primary" :column="true">
-          <v-chip label>Riz</v-chip>
-          <v-chip label>Pâte</v-chip>
-        </v-chip-group>
-        <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 5">{{ $t('common.btn.continue') }}</v-btn>
-          <v-btn text>{{ $t('common.btn.cancel') }}</v-btn>
-        </div>
-      </v-stepper-content>
+      <IngredientStep :title="$t('addRecipe.steps.dairyProducts')"
+        :step="8" :complete="currentStep > 8"
+        :ingredients="ingredients" ingredient-type="DAIRY-PRODUCT"
+        @next-step="updateStep" @previous-step="updateStep"
+      />
 
-      <v-stepper-step :complete="e6 > 5" step="5">
-        {{ $t('addRecipe.steps.vegetables') }}
-      </v-stepper-step>
+      <IngredientStep :title="$t('addRecipe.steps.condiments')"
+        :step="9" :complete="currentStep > 9"
+        :ingredients="ingredients" ingredient-type="CONDIMENT"
+        @next-step="updateStep" @previous-step="updateStep"
+      />
 
-      <v-stepper-content step="5">
-        <v-chip-group multiple active-class="primary">
-          <v-chip label>Carotte</v-chip>
-          <v-chip label>Poireaux</v-chip>
-        </v-chip-group>
-        <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 6">{{ $t('common.btn.continue') }}</v-btn>
-          <v-btn text>{{ $t('common.btn.cancel') }}</v-btn>
-        </div>
-      </v-stepper-content>
-
-      <v-stepper-step :complete="e6 > 6" step="6">
-        {{ $t('addRecipe.steps.animalBased') }}
-      </v-stepper-step>
-
-      <v-stepper-content step="6">
-        <v-chip-group multiple active-class="primary" :column="true">
-          <v-chip label>Steak haché</v-chip>
-          <v-chip label>Jambon</v-chip>
-          <v-chip label>Oeuf</v-chip>
-        </v-chip-group>
-        <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 7">{{ $t('common.btn.continue') }}</v-btn>
-          <v-btn text>{{ $t('common.btn.cancel') }}</v-btn>
-        </div>
-      </v-stepper-content>
-
-      <v-stepper-step :complete="e6 > 7" step="7">
-        {{ $t('addRecipe.steps.fruits') }}
-      </v-stepper-step>
-      <v-stepper-content step="7">
-        <v-chip-group multiple active-class="primary">
-          <v-chip label>Pomme</v-chip>
-          <v-chip label>Banane</v-chip>
-        </v-chip-group>
-        <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 8">{{ $t('common.btn.continue') }}</v-btn>
-          <v-btn text>{{ $t('common.btn.cancel') }}</v-btn>
-        </div>
-      </v-stepper-content>
-
-      <v-stepper-step :complete="e6 > 8" step="8">
-        {{ $t('addRecipe.steps.dairyProducts') }}
-      </v-stepper-step>
-      <v-stepper-content step="8">
-        <v-chip-group multiple active-class="primary">
-          <v-chip label>Crème fraiche</v-chip>
-          <v-chip label>Lait</v-chip>
-        </v-chip-group>
-        <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 9">{{ $t('common.btn.continue') }}</v-btn>
-          <v-btn text>{{ $t('common.btn.cancel') }}</v-btn>
-        </div>
-      </v-stepper-content>
-
-      <v-stepper-step :complete="e6 > 9" step="9">
-        {{ $t('addRecipe.steps.condiments') }}
-      </v-stepper-step>
-      <v-stepper-content step="9">
-        <v-chip-group multiple active-class="primary">
-          <v-chip label>Ketchup</v-chip>
-          <v-chip label>Sel de guérande</v-chip>
-        </v-chip-group>
-        <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 10">{{ $t('common.btn.continue') }}</v-btn>
-          <v-btn text>{{ $t('common.btn.cancel') }}</v-btn>
-        </div>
-      </v-stepper-content>
-
-      <v-stepper-step :complete="e6 > 10" step="10">
-        {{ $t('addRecipe.steps.others') }}
-      </v-stepper-step>
-      <v-stepper-content step="10">
-        <v-chip-group multiple active-class="primary">
-          <v-chip label>Vin blanc</v-chip>
-          <v-chip label>Levure</v-chip>
-        </v-chip-group>
-        <div class="mt-2">
-          <v-btn color="primary" @click="e6 = 11">{{ $t('common.btn.continue') }}</v-btn>
-          <v-btn text>{{ $t('common.btn.cancel') }}</v-btn>
-        </div>
-      </v-stepper-content>
+      <IngredientStep :title="$t('addRecipe.steps.others')"
+        :step="10" :complete="currentStep > 10"
+        :ingredients="ingredients" ingredient-type="OTHER"
+        @next-step="updateStep" @previous-step="updateStep"
+      />
     </v-stepper>
   </v-container>
 </template>
 
 <script>
+import { getIngredients } from '@/api';
+import IngredientStep from '@/components/add-recipe/IngredientStep.vue';
+import MinuteStep from '@/components/add-recipe/MinuteStep.vue';
+import CaloriesLevelStep from '@/components/add-recipe/CaloriesLevelStep.vue';
+import RecipeTitleStep from '@/components/add-recipe/RecipeTitleStep.vue';
+
 export default {
+  name: 'add-recipe',
+  components: {
+    CaloriesLevelStep,
+    IngredientStep,
+    MinuteStep,
+    RecipeTitleStep,
+  },
   data() {
     return {
-      e6: 1,
-      minutesLabel: [
-        '5',
-        '10',
-        '15',
-        '30',
-        '45',
-        '60',
-        '+ 60',
-      ],
-      caloriesLabel: [
-        'Low',
-        'Medium',
-        'High',
-      ],
+      currentStep: 1,
+      ingredients: [],
     };
+  },
+  mounted() {
+    getIngredients().then((ingredients) => {
+      this.ingredients = ingredients;
+    });
+  },
+  // TODO: remove that by using a store
+  methods: {
+    updateStep({ step }) {
+      this.currentStep = step;
+    },
   },
 };
 </script>
