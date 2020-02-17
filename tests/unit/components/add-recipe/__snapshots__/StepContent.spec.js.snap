@@ -2,6 +2,6 @@
 
 exports[`StepContent render Should render. 1`] = `
 <v-stepper-content-stub step="2">
-  <stepactions-stub step="2"></stepactions-stub>
+  <stepactions-stub></stepactions-stub>
 </v-stepper-content-stub>
 `;

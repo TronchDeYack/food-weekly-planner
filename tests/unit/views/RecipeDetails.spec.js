@@ -1,8 +1,8 @@
+import { shallowMount } from '@vue/test-utils';
 import { when } from 'jest-when';
 
 import RecipeDetails from '@/views/RecipeDetails.vue';
 import { getRecipe } from '@/api';
-import { createComponent } from '../../utils';
 
 jest.mock('@/api');
 
@@ -53,7 +53,7 @@ describe('RecipeDetails', () => {
 
   beforeEach(() => {
     when(getRecipe).calledWith(recipeId).mockResolvedValue(recipe);
-    component = createComponent(RecipeDetails, propsData);
+    component = shallowMount(RecipeDetails, { propsData });
   });
 
   it('Should render.', () => {
@@ -62,7 +62,7 @@ describe('RecipeDetails', () => {
 
   describe('State', () => {
     it('Should initialize "recipe" state to null.', () => {
-      const cmp = createComponent(RecipeDetails, propsData);
+      const cmp = shallowMount(RecipeDetails, { propsData });
       expect(cmp.vm.$data.recipe).toBeNull();
     });
   });

@@ -1,10 +1,10 @@
-import Egg from '@/components/icons/Egg.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../../utils';
+import Egg from '@/components/icons/Egg.vue';
 
 describe('Egg', () => {
   it('Should render.', () => {
-    const component = createComponent(Egg, {
+    const component = shallowMount(Egg, {
       propsData: {
         disabled: false,
       },

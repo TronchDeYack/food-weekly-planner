@@ -1,7 +1,7 @@
 <template>
   <div>
-    <StepTitle :complete="complete" :step="step" :title="title" />
-    <StepContent :step="step" @next-step="nextStep" @previous-step="previousStep">
+    <StepTitle :step="step" :title="title" />
+    <StepContent :step="step">
       <v-slider
         :tick-labels="minutesLabel"
         :max="minutesLabel.length - 1"
@@ -30,9 +30,6 @@ export default {
     step: {
       type: Number,
     },
-    complete: {
-      type: Boolean,
-    },
   },
   data() {
     return {
@@ -46,15 +43,6 @@ export default {
         '+ 60',
       ],
     };
-  },
-  // TODO: remove that by using a store
-  methods: {
-    nextStep(event) {
-      this.$emit('next-step', event);
-    },
-    previousStep(event) {
-      this.$emit('previous-step', event);
-    },
   },
 };
 </script>

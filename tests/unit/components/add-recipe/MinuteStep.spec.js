@@ -1,18 +1,17 @@
-import MinuteStep from '@/components/add-recipe/MinuteStep.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../../utils';
+import MinuteStep from '@/components/add-recipe/MinuteStep.vue';
 
 describe('MinuteStep', () => {
   const propsData = {
     title: 'EAT ME',
     step: 2,
-    complete: false,
   };
 
   let wrapper;
 
   beforeEach(() => {
-    wrapper = createComponent(MinuteStep, propsData);
+    wrapper = shallowMount(MinuteStep, { propsData });
   });
 
   describe('render', () => {

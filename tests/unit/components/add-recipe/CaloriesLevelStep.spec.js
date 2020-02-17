@@ -1,18 +1,17 @@
-import CaloriesLevelStep from '@/components/add-recipe/CaloriesLevelStep.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../../utils';
+import CaloriesLevelStep from '@/components/add-recipe/CaloriesLevelStep.vue';
 
 describe('CaloriesLevelStep', () => {
   const propsData = {
     title: 'EAT ME',
     step: 2,
-    complete: false,
   };
 
   let wrapper;
 
   beforeEach(() => {
-    wrapper = createComponent(CaloriesLevelStep, propsData);
+    wrapper = shallowMount(CaloriesLevelStep, { propsData });
   });
 
   describe('render', () => {

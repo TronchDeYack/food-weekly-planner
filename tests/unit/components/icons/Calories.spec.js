@@ -1,10 +1,10 @@
-import Calories from '@/components/icons/Calories.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../../utils';
+import Calories from '@/components/icons/Calories.vue';
 
 describe('Calories', () => {
   it('Should render.', () => {
-    const component = createComponent(Calories);
+    const component = shallowMount(Calories);
     expect(component).toMatchSnapshot();
   });
 });

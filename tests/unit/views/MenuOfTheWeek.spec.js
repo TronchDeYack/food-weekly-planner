@@ -1,7 +1,7 @@
+import { shallowMount } from '@vue/test-utils';
+
 import MenuOfTheWeek from '@/views/MenuOfTheWeek.vue';
 import { getRecipesOfTheWeek } from '@/api';
-
-import { createComponent } from '../../utils';
 
 jest.mock('@/api');
 
@@ -73,7 +73,7 @@ describe('MenuOfTheWeek', () => {
 
   beforeEach(() => {
     getRecipesOfTheWeek.mockResolvedValue(recipes);
-    wrapper = createComponent(MenuOfTheWeek);
+    wrapper = shallowMount(MenuOfTheWeek);
   });
 
   describe('render', () => {
@@ -94,7 +94,7 @@ describe('MenuOfTheWeek', () => {
 
   describe('State', () => {
     it('Should initialize "recipes" to an empty array.', () => {
-      const cmp = createComponent(MenuOfTheWeek);
+      const cmp = shallowMount(MenuOfTheWeek);
       expect(cmp.vm.$data.recipes).toEqual([]);
     });
   });

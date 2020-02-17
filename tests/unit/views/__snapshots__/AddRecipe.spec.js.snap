@@ -2,17 +2,17 @@
 
 exports[`AddRecipe Should render. 1`] = `
 <v-container-stub tag="div">
-  <v-stepper-stub value="1" vertical="true">
+  <v-stepper-stub value="2" vertical="true">
     <recipetitlestep-stub title="addRecipe.steps.newTitle" step="1"></recipetitlestep-stub>
     <minutestep-stub title="addRecipe.steps.minutes" step="2"></minutestep-stub>
     <calorieslevelstep-stub title="addRecipe.steps.calories" step="3"></calorieslevelstep-stub>
-    <ingredientstep-stub title="addRecipe.steps.starchyFood" step="4" ingredients="[object Object],[object Object],[object Object]" ingredienttype="STARCHY-FOOD"></ingredientstep-stub>
-    <ingredientstep-stub title="addRecipe.steps.vegetables" step="5" ingredients="[object Object],[object Object],[object Object]" ingredienttype="VEGETABLE"></ingredientstep-stub>
-    <ingredientstep-stub title="addRecipe.steps.animalBased" step="6" ingredients="[object Object],[object Object],[object Object]" ingredienttype="MEAT"></ingredientstep-stub>
-    <ingredientstep-stub title="addRecipe.steps.fruits" step="7" ingredients="[object Object],[object Object],[object Object]" ingredienttype="FRUIT"></ingredientstep-stub>
-    <ingredientstep-stub title="addRecipe.steps.dairyProducts" step="8" ingredients="[object Object],[object Object],[object Object]" ingredienttype="DAIRY-PRODUCT"></ingredientstep-stub>
-    <ingredientstep-stub title="addRecipe.steps.condiments" step="9" ingredients="[object Object],[object Object],[object Object]" ingredienttype="CONDIMENT"></ingredientstep-stub>
-    <ingredientstep-stub title="addRecipe.steps.others" step="10" ingredients="[object Object],[object Object],[object Object]" ingredienttype="OTHER"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.starchyFood" step="4" ingredienttype="STARCHY-FOOD"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.vegetables" step="5" ingredienttype="VEGETABLE"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.animalBased" step="6" ingredienttype="MEAT"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.fruits" step="7" ingredienttype="FRUIT"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.dairyProducts" step="8" ingredienttype="DAIRY-PRODUCT"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.condiments" step="9" ingredienttype="CONDIMENT"></ingredientstep-stub>
+    <ingredientstep-stub title="addRecipe.steps.others" step="10" ingredienttype="OTHER"></ingredientstep-stub>
   </v-stepper-stub>
 </v-container-stub>
 `;

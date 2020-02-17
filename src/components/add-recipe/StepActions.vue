@@ -10,23 +10,16 @@
 </template>
 
 <script>
+import { ADD_RECIPE_NEXT_STEP, ADD_RECIPE_PREVIOUS_STEP } from '@/store/mutations';
+
 export default {
   name: 'add-recipe-step-actions',
-  props: {
-    step: {
-      type: Number,
-    },
-  },
   methods: {
     nextStep() {
-      this.$emit('next-step', {
-        step: this.step + 1,
-      });
+      this.$store.commit(ADD_RECIPE_NEXT_STEP);
     },
     previousStep() {
-      this.$emit('previous-step', {
-        step: this.step - 1,
-      });
+      this.$store.commit(ADD_RECIPE_PREVIOUS_STEP);
     },
   },
 };

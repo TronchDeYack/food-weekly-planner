@@ -1,10 +1,10 @@
-import Fish from '@/components/icons/Fish.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../../utils';
+import Fish from '@/components/icons/Fish.vue';
 
 describe('Fish', () => {
   it('Should render.', () => {
-    const component = createComponent(Fish, {
+    const component = shallowMount(Fish, {
       propsData: {
         disabled: false,
       },

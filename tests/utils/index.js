@@ -1,8 +1,9 @@
-import { shallowMount } from '@vue/test-utils';
+import Vuex from 'vuex';
+import { createLocalVue } from '@vue/test-utils';
 
-export function createComponent(component, propsData, mixins = []) {
-  return shallowMount(component, {
-    mixins,
-    propsData,
-  });
+export function createAppStore(storeConfig) {
+  const LocalVue = createLocalVue();
+  LocalVue.use(Vuex);
+  const store = new Vuex.Store(storeConfig);
+  return new LocalVue({ store });
 }

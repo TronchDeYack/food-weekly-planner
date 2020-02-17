@@ -1,7 +1,7 @@
+import { shallowMount } from '@vue/test-utils';
+
 import Shopping from '@/views/Shopping.vue';
 import { getShoppingList } from '@/api';
-
-import { createComponent } from '../../utils';
 
 jest.mock('@/api');
 
@@ -61,7 +61,7 @@ describe('Shopping', () => {
 
   beforeEach(() => {
     getShoppingList.mockResolvedValue(ingredientsToShopping);
-    wrapper = createComponent(Shopping);
+    wrapper = shallowMount(Shopping);
   });
 
   it('Should render.', () => {
@@ -70,7 +70,7 @@ describe('Shopping', () => {
 
   describe('state', () => {
     it('Should initialize "ingredients" state to an empty array.', () => {
-      wrapper = createComponent(Shopping);
+      wrapper = shallowMount(Shopping);
       expect(wrapper.vm.$data.ingredients).toEqual([]);
     });
   });

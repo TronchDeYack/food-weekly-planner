@@ -1,7 +1,7 @@
+import { shallowMount } from '@vue/test-utils';
+
 import Recipes from '@/views/Recipes.vue';
 import { getRecipes } from '@/api';
-
-import { createComponent } from '../../utils';
 
 jest.mock('@/api');
 
@@ -71,7 +71,7 @@ describe('Recipes', () => {
 
   beforeEach(() => {
     getRecipes.mockResolvedValue(recipes);
-    wrapper = createComponent(Recipes);
+    wrapper = shallowMount(Recipes);
   });
 
   describe('render', () => {
@@ -92,7 +92,7 @@ describe('Recipes', () => {
 
   describe('State', () => {
     it('Should initialize "recipes" to an empty array.', () => {
-      const cmp = createComponent(Recipes);
+      const cmp = shallowMount(Recipes);
       expect(cmp.vm.$data.recipes).toEqual([]);
     });
   });

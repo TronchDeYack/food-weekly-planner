@@ -1,10 +1,10 @@
-import Vegetable from '@/components/icons/Vegetable.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../../utils';
+import Vegetable from '@/components/icons/Vegetable.vue';
 
 describe('Vegetable', () => {
   it('Should render.', () => {
-    const component = createComponent(Vegetable, {
+    const component = shallowMount(Vegetable, {
       propsData: {
         disabled: false,
       },

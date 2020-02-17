@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Fish Should render. 1`] = `
-<svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg" class="" propsData="[object Object]">
+<svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg" class="">
   <path d="m10.711 181.047 34.622 73.726c2.617 3.104 2.617 7.565 0 10.669l-34.622 73.727 127.659-37.547v-83.029z" fill="#db4655"></path>
   <path d="m204.793 334.834-22.908 36.653c-2.649 4.238-1.014 9.927 3.545 11.975 15.92 7.154 32.278 12.907 49.008 17.166 6.526 1.661 13.46.372 19.141-3.243l59.152-37.642z" fill="#db4655"></path>
   <path d="m333.264 122.437c-2.159-6.477-8.059-10.969-14.875-11.36-4.631-.265-9.282-.421-13.96-.421-50.184 0-98.136 13.368-142.238 37.633-4.894 2.693-5.345 9.599-.949 13.045l51.855 40.654 141.149-16.606z" fill="#e5646e"></path>

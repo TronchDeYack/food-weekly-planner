@@ -1,6 +1,6 @@
-import MenuCard from '@/components/MenuCard.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../utils';
+import MenuCard from '@/components/MenuCard.vue';
 
 describe('MenuCard', () => {
   const ingredients = [
@@ -31,7 +31,7 @@ describe('MenuCard', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = createComponent(MenuCard, propsData);
+    wrapper = shallowMount(MenuCard, { propsData });
   });
 
   it('Should render.', () => {
@@ -92,7 +92,7 @@ describe('MenuCard', () => {
           ingredients: ingredientsWithEgg,
         };
 
-        wrapper = createComponent(MenuCard, propsDataWithEgg);
+        wrapper = shallowMount(MenuCard, { propsData: propsDataWithEgg });
 
         expect(wrapper.vm.hasEgg).toBe(true);
       });
@@ -104,7 +104,7 @@ describe('MenuCard', () => {
 
     describe('hasMeat', () => {
       it('Should highlight "meat" icon when there is meat in the ingredients.', () => {
-        wrapper = createComponent(MenuCard, propsDataWithMeat);
+        wrapper = shallowMount(MenuCard, { propsData: propsDataWithMeat });
 
         expect(wrapper.vm.hasMeat).toBe(true);
       });
@@ -116,7 +116,7 @@ describe('MenuCard', () => {
 
     describe('hasFish', () => {
       it('Should highlight "fish" icon when there is fish in the ingredients.', () => {
-        wrapper = createComponent(MenuCard, propsDataWithFish);
+        wrapper = shallowMount(MenuCard, { propsData: propsDataWithFish });
 
         expect(wrapper.vm.hasFish).toBe(true);
       });
@@ -132,13 +132,13 @@ describe('MenuCard', () => {
       });
 
       it('Should not highlight "vegetarian" icon when there is fish in the ingredients.', () => {
-        wrapper = createComponent(MenuCard, propsDataWithFish);
+        wrapper = shallowMount(MenuCard, { propsData: propsDataWithFish });
 
         expect(wrapper.vm.isVegetarian).toBe(false);
       });
 
       it('Should not highlight "vegetarian" icon when there is meat in the ingredients.', () => {
-        wrapper = createComponent(MenuCard, propsDataWithMeat);
+        wrapper = shallowMount(MenuCard, { propsData: propsDataWithMeat });
 
         expect(wrapper.vm.isVegetarian).toBe(false);
       });

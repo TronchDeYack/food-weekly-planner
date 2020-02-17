@@ -1,7 +1,7 @@
 <template>
   <v-stepper-content :step="step">
     <slot></slot>
-    <StepActions :step="step" @next-step="nextStep" @previous-step="previousStep"/>
+    <StepActions />
   </v-stepper-content>
 </template>
 
@@ -16,15 +16,6 @@ export default {
   props: {
     step: {
       type: Number,
-    },
-  },
-  // TODO: remove that by using a store
-  methods: {
-    nextStep(event) {
-      this.$emit('next-step', event);
-    },
-    previousStep(event) {
-      this.$emit('previous-step', event);
     },
   },
 };

@@ -1,6 +1,6 @@
-import StepContent from '@/components/add-recipe/StepContent.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../../utils';
+import StepContent from '@/components/add-recipe/StepContent.vue';
 
 describe('StepContent', () => {
   const propsData = {
@@ -9,7 +9,7 @@ describe('StepContent', () => {
 
   describe('render', () => {
     it('Should render.', () => {
-      const wrapper = createComponent(StepContent, propsData);
+      const wrapper = shallowMount(StepContent, { propsData });
       expect(wrapper).toMatchSnapshot();
     });
   });

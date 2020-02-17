@@ -1,10 +1,10 @@
-import BottomNavbar from '@/components/BottomNavbar.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../utils';
+import BottomNavbar from '@/components/BottomNavbar.vue';
 
 describe('BottomNavbar', () => {
   it('Should render.', () => {
-    const component = createComponent(BottomNavbar);
+    const component = shallowMount(BottomNavbar);
     expect(component).toMatchSnapshot();
   });
 });

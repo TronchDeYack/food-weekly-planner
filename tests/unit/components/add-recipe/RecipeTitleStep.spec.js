@@ -1,17 +1,16 @@
-import RecipeTitleStep from '@/components/add-recipe/RecipeTitleStep.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../../utils';
+import RecipeTitleStep from '@/components/add-recipe/RecipeTitleStep.vue';
 
 describe('RecipeTitleStep', () => {
   const propsData = {
     title: 'EAT ME',
     step: 2,
-    complete: false,
   };
 
   describe('render', () => {
     it('Should render.', () => {
-      const wrapper = createComponent(RecipeTitleStep, propsData);
+      const wrapper = shallowMount(RecipeTitleStep, { propsData });
       expect(wrapper).toMatchSnapshot();
     });
   });

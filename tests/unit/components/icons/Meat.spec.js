@@ -1,10 +1,10 @@
-import Meat from '@/components/icons/Meat.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../../utils';
+import Meat from '@/components/icons/Meat.vue';
 
 describe('Meat', () => {
   it('Should render.', () => {
-    const component = createComponent(Meat);
+    const component = shallowMount(Meat);
     expect(component).toMatchSnapshot();
   });
 });

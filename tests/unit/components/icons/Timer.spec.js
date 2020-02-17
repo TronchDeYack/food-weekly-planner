@@ -1,10 +1,10 @@
-import Timer from '@/components/icons/Timer.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../../utils';
+import Timer from '@/components/icons/Timer.vue';
 
 describe('Timer', () => {
   it('Should render.', () => {
-    const component = createComponent(Timer);
+    const component = shallowMount(Timer);
     expect(component).toMatchSnapshot();
   });
 });

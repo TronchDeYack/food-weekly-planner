@@ -1,9 +1,32 @@
+import { shallowMount } from '@vue/test-utils';
+
 import AddRecipe from '@/views/AddRecipe.vue';
 import { getIngredients } from '@/api';
-
-import { createComponent } from '../../utils';
+import { ADD_RECIPE_SET_INGREDIENTS } from '@/store/mutations';
 
 jest.mock('@/api');
+
+function getMockedStore() {
+  return {
+    commit: jest.fn(),
+    state: {
+      AddRecipe: {
+        currentStep: 2,
+        ingredients: [],
+      },
+    },
+  };
+}
+
+function createComponentInstance() {
+  const $store = getMockedStore();
+  return shallowMount(AddRecipe, {
+    mocks: {
+      $store,
+    },
+  });
+}
+
 describe('AddRecipe', () => {
   const ingredients = [
     {
@@ -30,28 +53,17 @@ describe('AddRecipe', () => {
 
   beforeEach(() => {
     getIngredients.mockResolvedValue(ingredients);
-    wrapper = createComponent(AddRecipe);
+    wrapper = createComponentInstance(AddRecipe);
   });
 
   it('Should render.', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe('state', () => {
-    it('Should initialize "currentStep" to 1.', () => {
-      wrapper = createComponent(AddRecipe);
-      expect(wrapper.vm.$data.currentStep).toEqual(1);
-    });
-
-    it('Should initialize "ingredients" to an empty array.', () => {
-      wrapper = createComponent(AddRecipe);
-      expect(wrapper.vm.$data.ingredients).toEqual([]);
-    });
-  });
-
   describe('mounted', () => {
-    it('Should get ingredients data from API and store them in "ingredients" state.', () => {
-      expect(wrapper.vm.$data.ingredients).toEqual(ingredients);
+    it('Should get ingredients data from API and commit them in the store by calling "" mutation.', () => {
+      expect(wrapper.vm.$store.commit.mock.calls[0][0])
+        .toEqual(ADD_RECIPE_SET_INGREDIENTS, ingredients);
     });
   });
 });

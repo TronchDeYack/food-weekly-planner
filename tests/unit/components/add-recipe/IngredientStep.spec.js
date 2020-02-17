@@ -1,65 +1,111 @@
+import { shallowMount } from '@vue/test-utils';
+
 import IngredientStep from '@/components/add-recipe/IngredientStep.vue';
 
-import { createComponent } from '../../../utils';
+const ingredientType = 'CONDIMENT';
+
+function getMockedStore() {
+  return {
+    state: {
+      AddRecipe: {
+        currentStep: 2,
+        ingredients: [
+          {
+            id: 'PATE-ID',
+            label: 'Pâtes',
+            unit: 'GR',
+            type: 'STARCHY-FOOD',
+          },
+          {
+            id: 'SAUCE-TOMATE-ID',
+            label: 'Sauce Tomate',
+            unit: 'GR',
+            type: 'CONDIMENT',
+          },
+          {
+            id: 'STEAK-ID',
+            label: 'Steak haché',
+            unit: 'GR',
+            type: 'MEAT',
+          },
+          {
+            id: 'OIL-ID',
+            label: 'Huile d\'olives',
+            unit: 'CAC',
+            type: 'CONDIMENT',
+          },
+          {
+            id: 'TOMATE-ID',
+            label: 'Tomates',
+            unit: 'UNIT',
+            type: 'VEGETABLE',
+          },
+          {
+            id: 'SALT-ID',
+            label: 'Sel',
+            unit: 'CAC',
+            type: 'CONDIMENT',
+          },
+          {
+            id: 'BREAD-ID',
+            label: 'Pain',
+            unit: 'SLICE',
+            type: 'STARCHY-FOOD',
+          },
+        ],
+      },
+    },
+    getters: {
+      filteredIngredients: (type) => {
+        if (type === ingredientType) {
+          return [
+            {
+              id: 'SAUCE-TOMATE-ID',
+              label: 'Sauce Tomate',
+              unit: 'GR',
+              type: 'CONDIMENT',
+            },
+            {
+              id: 'OIL-ID',
+              label: 'Huile d\'olives',
+              unit: 'CAC',
+              type: 'CONDIMENT',
+            },
+            {
+              id: 'SALT-ID',
+              label: 'Sel',
+              unit: 'CAC',
+              type: 'CONDIMENT',
+            },
+          ];
+        }
+        return [];
+      },
+    },
+  };
+}
+
+function createComponentInstance(propsData) {
+  const $store = getMockedStore();
+  return shallowMount(IngredientStep, {
+    propsData,
+    mocks: {
+      $store,
+    },
+  });
+}
 
 describe('IngredientStep', () => {
   let wrapper;
 
-  const currentStep = 2;
-
   const propsData = {
     title: 'EAT ME',
-    step: currentStep,
-    complete: false,
+    step: 2,
     ingredientType: 'CONDIMENT',
-    ingredients: [
-      {
-        id: 'PATE-ID',
-        label: 'Pâtes',
-        unit: 'GR',
-        type: 'STARCHY-FOOD',
-      },
-      {
-        id: 'SAUCE-TOMATE-ID',
-        label: 'Sauce Tomate',
-        unit: 'GR',
-        type: 'CONDIMENT',
-      },
-      {
-        id: 'STEAK-ID',
-        label: 'Steak haché',
-        unit: 'GR',
-        type: 'MEAT',
-      },
-      {
-        id: 'OIL-ID',
-        label: 'Huile d\'olives',
-        unit: 'CAC',
-        type: 'CONDIMENT',
-      },
-      {
-        id: 'TOMATE-ID',
-        label: 'Tomates',
-        unit: 'UNIT',
-        type: 'VEGETABLE',
-      },
-      {
-        id: 'SALT-ID',
-        label: 'Sel',
-        unit: 'CAC',
-        type: 'CONDIMENT',
-      },
-      {
-        id: 'BREAD-ID',
-        label: 'Pain',
-        unit: 'SLICE',
-        type: 'STARCHY-FOOD',
-      },
-    ],
   };
 
   beforeEach(() => {
-    wrapper = createComponent(IngredientStep, propsData);
+    wrapper = createComponentInstance(propsData);
   });
 
   describe('render', () => {
@@ -93,33 +139,6 @@ describe('IngredientStep', () => {
       filteredIngredients.forEach((ingredient, index) => {
         expect(wrapper.findAll('v-chip-stub').at(index).text()).toEqual(ingredient.label);
       });
-    });
-  });
-
-  describe('computed', () => {
-    it('Should return only filtered ingredients by the given type.', () => {
-      const expectedIngredients = [
-        {
-          id: 'SAUCE-TOMATE-ID',
-          label: 'Sauce Tomate',
-          unit: 'GR',
-          type: 'CONDIMENT',
-        },
-        {
-          id: 'OIL-ID',
-          label: 'Huile d\'olives',
-          unit: 'CAC',
-          type: 'CONDIMENT',
-        },
-        {
-          id: 'SALT-ID',
-          label: 'Sel',
-          unit: 'CAC',
-          type: 'CONDIMENT',
-        },
-      ];
-
-      expect(wrapper.vm.filteredIngredients).toEqual(expectedIngredients);
     });
   });
 });

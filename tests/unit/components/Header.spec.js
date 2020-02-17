@@ -1,10 +1,10 @@
-import Header from '@/components/Header.vue';
+import { shallowMount } from '@vue/test-utils';
 
-import { createComponent } from '../../utils';
+import Header from '@/components/Header.vue';
 
 describe('Header', () => {
   it('Should render.', () => {
-    const component = createComponent(Header);
+    const component = shallowMount(Header);
     expect(component).toMatchSnapshot();
   });
 });
