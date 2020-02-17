@@ -4,6 +4,7 @@ import {
   ADD_RECIPE_PREVIOUS_STEP,
   ADD_RECIPE_SET_INGREDIENTS,
   ADD_RECIPE_TOGGLE_INGREDIENT,
+  ADD_RECIPE_REINITIALIZE,
 } from '@/store/mutations';
 import { createAppStore } from '../../utils';
 
@@ -249,6 +250,16 @@ describe('Add recipe steps store', () => {
       app.$store.commit(ADD_RECIPE_TOGGLE_INGREDIENT, { ingredientId: 'SAUCE-TOMATE-ID', selected: false });
 
       expect(app.$store.state.AddRecipe.ingredients).toEqual(expectedIngredients);
+    });
+
+    it('Should reinitialize the state when calling "ADD_RECIPE_REINITIALIZE" mutation.', () => {
+      app.$store.state.AddRecipe.currentStep = 3;
+      app.$store.state.AddRecipe.ingredients = [...ingredients];
+
+      app.$store.commit(ADD_RECIPE_REINITIALIZE);
+
+      expect(app.$store.state.AddRecipe.currentStep).toBe(1);
+      expect(app.$store.state.AddRecipe.ingredients).toEqual([]);
     });
   });
 });

@@ -3,8 +3,8 @@
     <StepTitle :step="step" :title="title" />
     <StepContent :step="step">
       <v-chip-group multiple active-class="primary">
-        <v-chip label v-for="ingredient in filteredIngredients"
-          :key="ingredient.id">
+        <v-chip label v-for="ingredient in filteredIngredients" :input-value="ingredient.selected"
+          @click.native="toggleIngredient(ingredient)" :key="ingredient.id">
           {{ ingredient.label }}
         </v-chip>
       </v-chip-group>
@@ -15,6 +15,8 @@
 <script>
 import StepTitle from '@/components/add-recipe/StepTitle.vue';
 import StepContent from '@/components/add-recipe/StepContent.vue';
+
+import { ADD_RECIPE_TOGGLE_INGREDIENT } from '@/store/mutations';
 
 export default {
   name: 'add-recipe-ingredient-step',
@@ -36,6 +38,14 @@ export default {
   computed: {
     filteredIngredients() {
       return this.$store.getters.filteredIngredients(this.ingredientType);
+    },
+  },
+  methods: {
+    toggleIngredient(ingredient) {
+      this.$store.commit(ADD_RECIPE_TOGGLE_INGREDIENT, {
+        ingredientId: ingredient.id,
+        selected: !ingredient.selected,
+      });
     },
   },
 };

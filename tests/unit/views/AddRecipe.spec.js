@@ -2,7 +2,7 @@ import { shallowMount } from '@vue/test-utils';
 
 import AddRecipe from '@/views/AddRecipe.vue';
 import { getIngredients } from '@/api';
-import { ADD_RECIPE_SET_INGREDIENTS } from '@/store/mutations';
+import { ADD_RECIPE_SET_INGREDIENTS, ADD_RECIPE_REINITIALIZE } from '@/store/mutations';
 
 jest.mock('@/api');
 
@@ -61,8 +61,14 @@ describe('AddRecipe', () => {
   });
 
   describe('mounted', () => {
+    it('Should reinitialize form data.', () => {
+      wrapper = createComponentInstance(AddRecipe);
+
+      expect(wrapper.vm.$store.commit.mock.calls[0][0]).toEqual(ADD_RECIPE_REINITIALIZE);
+    });
+
     it('Should get ingredients data from API and commit them in the store by calling "" mutation.', () => {
-      expect(wrapper.vm.$store.commit.mock.calls[0][0])
+      expect(wrapper.vm.$store.commit.mock.calls[1][0])
         .toEqual(ADD_RECIPE_SET_INGREDIENTS, ingredients);
     });
   });

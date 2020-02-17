@@ -11,7 +11,7 @@ exports[`IngredientStep render Should render. 1`] = `
       <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
         Huile d'olives
       </v-chip-stub>
-      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
+      <v-chip-stub activeclass="" tag="span" inputvalue="true" active="true" closeicon="$delete" filtericon="$complete" label="true">
         Sel
       </v-chip-stub>
     </v-chip-group-stub>

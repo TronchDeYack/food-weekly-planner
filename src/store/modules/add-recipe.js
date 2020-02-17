@@ -3,6 +3,7 @@ import {
   ADD_RECIPE_PREVIOUS_STEP,
   ADD_RECIPE_SET_INGREDIENTS,
   ADD_RECIPE_TOGGLE_INGREDIENT,
+  ADD_RECIPE_REINITIALIZE,
 } from '@/store/mutations';
 
 const initialState = {
@@ -34,10 +35,14 @@ const mutations = {
     );
     state.ingredients[ingredientIndex].selected = selected;
   },
+  [ADD_RECIPE_REINITIALIZE](state) {
+    state.currentStep = initialState.currentStep;
+    state.ingredients = [];
+  },
 };
 
 export default {
-  state: initialState,
+  state: { ...initialState },
   getters,
   mutations,
 };

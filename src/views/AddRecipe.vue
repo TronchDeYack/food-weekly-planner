@@ -40,7 +40,7 @@ import IngredientStep from '@/components/add-recipe/IngredientStep.vue';
 import MinuteStep from '@/components/add-recipe/MinuteStep.vue';
 import CaloriesLevelStep from '@/components/add-recipe/CaloriesLevelStep.vue';
 import RecipeTitleStep from '@/components/add-recipe/RecipeTitleStep.vue';
-import { ADD_RECIPE_SET_INGREDIENTS } from '@/store/mutations';
+import { ADD_RECIPE_SET_INGREDIENTS, ADD_RECIPE_REINITIALIZE } from '@/store/mutations';
 
 export default {
   name: 'add-recipe',
@@ -56,6 +56,7 @@ export default {
     }),
   },
   mounted() {
+    this.$store.commit(ADD_RECIPE_REINITIALIZE);
     getIngredients().then((ingredients) => {
       this.$store.commit(ADD_RECIPE_SET_INGREDIENTS, ingredients);
     });
