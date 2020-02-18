@@ -42,10 +42,7 @@ export default {
   },
   methods: {
     toggleIngredient(ingredient) {
-      this.$store.commit(ADD_RECIPE_TOGGLE_INGREDIENT, {
-        ingredientId: ingredient.id,
-        selected: !ingredient.selected,
-      });
+      this.$store.commit(ADD_RECIPE_TOGGLE_INGREDIENT, ingredient.id);
     },
   },
 };

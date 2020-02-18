@@ -4,7 +4,17 @@ exports[`CaloriesLevelStep render Should render. 1`] = `
 <div>
   <steptitle-stub title="EAT ME" step="2"></steptitle-stub>
   <stepcontent-stub step="2">
-    <v-slider-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" loaderheight="2" max="2" min="0" step="1" thumbsize="32" ticklabels="Low,Medium,High" ticks="always" ticksize="3"></v-slider-stub>
+    <v-chip-group-stub activeclass="primary" nexticon="$next" mobilebreakpoint="1264" previcon="$prev">
+      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
+        common.calories.VALUE-1
+      </v-chip-stub>
+      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
+        common.calories.VALUE-2
+      </v-chip-stub>
+      <v-chip-stub activeclass="" tag="span" active="true" closeicon="$delete" filtericon="$complete" label="true">
+        common.calories.VALUE-3
+      </v-chip-stub>
+    </v-chip-group-stub>
   </stepcontent-stub>
 </div>
 `;

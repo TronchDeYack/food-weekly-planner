@@ -135,22 +135,10 @@ describe('IngredientStep', () => {
 
   describe('methods', () => {
     describe('toggleIngredients', () => {
-      it('Should select an ingredient by calling "ADD_RECIPE_TOGGLE_INGREDIENT" mutation with the selected ingredient ID when clicking on an unselected ingredient chip.', () => {
+      it('Should toggle an ingredient by calling "ADD_RECIPE_TOGGLE_INGREDIENT" mutation with the selected ingredient ID when clicking on an ingredient chip.', () => {
         wrapper.findAll('v-chip-stub').at(1).trigger('click');
 
-        expect(wrapper.vm.$store.commit.mock.calls[0][0]).toEqual(ADD_RECIPE_TOGGLE_INGREDIENT, {
-          ingredientId: 'OIL-ID',
-          selected: true,
-        });
-      });
-
-      it('Should unselect an ingredient by calling "ADD_RECIPE_TOGGLE_INGREDIENT" mutation with the selected ingredient ID when clicking on a selected ingredient chip.', () => {
-        wrapper.findAll('v-chip-stub').at(2).trigger('click');
-
-        expect(wrapper.vm.$store.commit.mock.calls[0][0]).toEqual(ADD_RECIPE_TOGGLE_INGREDIENT, {
-          ingredientId: 'SALT-ID',
-          selected: true,
-        });
+        expect(wrapper.vm.$store.commit.mock.calls[0][0]).toEqual(ADD_RECIPE_TOGGLE_INGREDIENT, 'OIL-ID');
       });
     });
   });

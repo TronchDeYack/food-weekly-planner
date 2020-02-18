@@ -35,12 +35,12 @@
 <script>
 import { mapState } from 'vuex';
 
-import { getIngredients } from '@/api';
 import IngredientStep from '@/components/add-recipe/IngredientStep.vue';
 import MinuteStep from '@/components/add-recipe/MinuteStep.vue';
 import CaloriesLevelStep from '@/components/add-recipe/CaloriesLevelStep.vue';
 import RecipeTitleStep from '@/components/add-recipe/RecipeTitleStep.vue';
-import { ADD_RECIPE_SET_INGREDIENTS, ADD_RECIPE_REINITIALIZE } from '@/store/mutations';
+import { ADD_RECIPE_REINITIALIZE } from '@/store/mutations';
+import { ADD_RECIPE_GET_INGREDIENTS } from '@/store/actions';
 
 export default {
   name: 'add-recipe',
@@ -57,9 +57,7 @@ export default {
   },
   mounted() {
     this.$store.commit(ADD_RECIPE_REINITIALIZE);
-    getIngredients().then((ingredients) => {
-      this.$store.commit(ADD_RECIPE_SET_INGREDIENTS, ingredients);
-    });
+    this.$store.dispatch(ADD_RECIPE_GET_INGREDIENTS);
   },
 };
 </script>

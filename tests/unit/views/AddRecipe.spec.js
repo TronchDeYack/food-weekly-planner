@@ -2,13 +2,15 @@ import { shallowMount } from '@vue/test-utils';
 
 import AddRecipe from '@/views/AddRecipe.vue';
 import { getIngredients } from '@/api';
-import { ADD_RECIPE_SET_INGREDIENTS, ADD_RECIPE_REINITIALIZE } from '@/store/mutations';
+import { ADD_RECIPE_REINITIALIZE } from '@/store/mutations';
+import { ADD_RECIPE_GET_INGREDIENTS } from '@/store/actions';
 
 jest.mock('@/api');
 
 function getMockedStore() {
   return {
     commit: jest.fn(),
+    dispatch: jest.fn(),
     state: {
       AddRecipe: {
         currentStep: 2,
@@ -67,9 +69,9 @@ describe('AddRecipe', () => {
       expect(wrapper.vm.$store.commit.mock.calls[0][0]).toEqual(ADD_RECIPE_REINITIALIZE);
     });
 
-    it('Should get ingredients data from API and commit them in the store by calling "" mutation.', () => {
-      expect(wrapper.vm.$store.commit.mock.calls[1][0])
-        .toEqual(ADD_RECIPE_SET_INGREDIENTS, ingredients);
+    it('Should dispatch "ADD_RECIPE_GET_INGREDIENTS".', () => {
+      expect(wrapper.vm.$store.dispatch.mock.calls[0][0])
+        .toEqual(ADD_RECIPE_GET_INGREDIENTS);
     });
   });
 });

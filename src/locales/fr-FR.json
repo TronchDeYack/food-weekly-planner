@@ -4,6 +4,11 @@
     "btn": {
       "cancel": "Annuler",
       "continue": "Continuer"
+    },
+    "calories": {
+      "low": "Faible",
+      "medium": "Modéré",
+      "high": "Elevé"
     }
   },
   "menu": {
